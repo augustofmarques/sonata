@@ -5,7 +5,7 @@ Data-oriented interfaces should explicitly manage:
 - dense tables
 - sorting
 - filtering
-- selection
+- selection (see [`selection.md`](selection.md) and [`../system/selection.md`](../system/selection.md))
 - bulk actions
 - pagination or progressive loading
 - empty states

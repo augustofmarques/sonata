@@ -230,3 +230,36 @@
 
 ## D-077 — Workspace-integrated data configuration
 **Decision:** Data-display configuration — columns, filters, sorting, grouping, visible panels, inspector state — may be stored within Sonata Workspaces (D-060), so users can switch between contextually meaningful data-presentation arrangements.
+
+## D-078 — Selection as a first-class system
+**Decision:** Selection is a first-class Sonata system and semantic state of the underlying data/object model. It extends the selection models decided in D-068 (single, multi, range, select-all) with toggle selection. The full model is defined in `system/selection.md`.
+
+## D-079 — Selection state distinction
+**Decision:** Selected, focused, hovered, active, checked and highlighted are distinct semantic/interaction states and must not be conflated.
+
+## D-080 — Shared selection across views
+**Decision:** Selection belongs to the underlying data/object model and may be observed by multiple views such as Table, List and Inspector.
+
+## D-081 — Selection summary
+**Decision:** Meaningful multi-selection should communicate its scope through a visible selection summary.
+
+## D-082 — Contextual selection actions
+**Decision:** Actions operating on a selection should become contextually discoverable and appropriately prominent when selection exists.
+
+## D-083 — Selection persistence
+**Decision:** Selection may persist across views, filtering, sorting, pagination and virtualization when the underlying data model and workflow justify it, with scope remaining clear.
+
+## D-084 — Spreadsheet workflows
+**Decision:** Spreadsheet-like selection is an explicit supported Sonata use case, including efficient row/cell selection, range selection, keyboard operation and bulk actions.
+
+## D-085 — Selection Mode
+**Decision:** Selection Mode is an official Sonata pattern for workflows in which temporarily transforming the interface into a selection-focused context improves usability.
+
+## D-086 — Mobile selection mode
+**Decision:** Mobile may use platform-appropriate selection gestures and temporarily transform the UI into a selection-focused mode while preserving the same semantic selection model.
+
+## D-087 — Selection and undo
+**Decision:** Reversible operations performed on selections should integrate with the application's undo/redo system where practical.
+
+## D-088 — Selection visual expression
+**Decision:** Selection may use Sonata accent and Expression mechanisms, but must remain distinguishable from other states and must not depend exclusively on color.

@@ -14,7 +14,7 @@ Potential capabilities:
 - inspector panels
 - workspaces
 
-Power features should augment, not replace, baseline usability.
+Power features should augment, not replace, baseline usability. Multi-selection, range selection and Selection Mode follow the shared semantic model in [`../system/selection.md`](../system/selection.md).
 
 ## Workspaces
 

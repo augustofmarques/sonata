@@ -65,6 +65,7 @@ Each module may contain content in one or more of these states:
 - [Inputs](system/inputs.md)
 - [Navigation](system/navigation.md)
 - [Data Display](system/data-display.md)
+- [Selection](system/selection.md)
 - [Tokens](system/tokens.md)
 - [Surfaces & Overlays](system/surfaces.md)
 - [Theming](system/theming.md)
@@ -94,6 +95,7 @@ Each module may contain content in one or more of these states:
 - [Command Palette](patterns/command-palette.md)
 - [Shortcuts](patterns/shortcuts.md)
 - [Data](patterns/data.md)
+- [Selection](patterns/selection.md)
 - [Power User](patterns/power-user.md)
 
 ### 06. Customization
@@ -107,7 +109,7 @@ Each module may contain content in one or more of these states:
 
 ### 07. Components & Patterns
 
-Catalog architecture is decided — see [Components & States](system/components.md) for the Primitive → Core Component → Compound Component → Pattern → Application Component graduation ladder (D-031–D-036). Actions ([`system/actions.md`](system/actions.md), D-037–D-041), Inputs ([`system/inputs.md`](system/inputs.md), D-042–D-053), Navigation ([`system/navigation.md`](system/navigation.md), D-054–D-064) and Data Display ([`system/data-display.md`](system/data-display.md), D-065–D-077) now have decided semantic models.
+Catalog architecture is decided — see [Components & States](system/components.md) for the Primitive → Core Component → Compound Component → Pattern → Application Component graduation ladder (D-031–D-036). Actions ([`system/actions.md`](system/actions.md), D-037–D-041), Inputs ([`system/inputs.md`](system/inputs.md), D-042–D-053), Navigation ([`system/navigation.md`](system/navigation.md), D-054–D-064), Data Display ([`system/data-display.md`](system/data-display.md), D-065–D-077) and Selection ([`system/selection.md`](system/selection.md), D-068, D-078–D-088) now have decided semantic models.
 
 Concrete specifications for the remaining categories remain planned, pending a stable foundation and token system:
 
@@ -219,6 +221,7 @@ The implementation must translate Sonata, not redefine it.
 - Inputs share a common, highly capable text-input infrastructure while keeping distinct semantic roles (Text Field/Search Field/Select/Combobox/Command Input); Select and Combobox coexist as separate official components. Validation is progressive (avoid interrupting mid-edit), required fields are explicit, Checkbox and Switch are semantically distinct, and a unified global command/search surface is intentionally scarce (typically 0–1, exceptionally 2). See [Inputs](system/inputs.md).
 - Sonata does not prescribe one universal navigation mechanism (Sidebar/Rail/Top nav/Tabs/Breadcrumbs are alternative manifestations, not competing philosophies); persistent navigation is used when it materially benefits orientation or switching, not by default. Available space is a resource — complex desktop applications should use multi-pane composition rather than being confined to a narrow single column — and Sonata accommodates applications up to CAD/enterprise complexity without an artificial simplicity ceiling. Workspaces are an official concept for persistent/temporary working contexts. See [Navigation](system/navigation.md).
 - Table, List, Inspector, Master-Detail and Split View are first-class, official Data Display components — a table is not a lesser citizen of the catalog. Data density coordinates with the global density system, common configuration changes should be reversible, dense interfaces use restrained expression, and active/current information generally takes spatial priority over historical information. Data-display configuration may live in Workspaces. See [Data Display](system/data-display.md).
+- Selection is a first-class semantic state of the underlying data/object model (single/multi/range/select-all/toggle), distinct from focus/hover/active/checked/highlighted, and shareable across views (Table/List/Inspector) rather than owned independently by each. Meaningful multi-selection exposes a summary and contextual bulk actions, integrates with undo where reversible, and may persist across filtering/sorting/pagination with scope kept clear. Spreadsheet-like row/cell selection and Selection Mode (including a mobile long-press variant) are official patterns; selection must never depend solely on color. See [Selection](system/selection.md).
 
 See [Decision Log](governance/decision-log.md) for the full, numbered (D-001…) record.
 

@@ -109,6 +109,10 @@ Sonata does not prescribe a universal navigation mechanism (D-054) — the appro
 
 Data-display components are a core category. The normative Sonata model — Table, List, Grid, Tree, Master-Detail, Split View, Inspector — is defined in [`data-display.md`](data-display.md). Tables and complex data presentations are first-class Sonata components (D-065), not an afterthought bolted onto simpler layouts.
 
+## Selection
+
+Selection is a first-class Sonata system and semantic state of the underlying data/object model, not a component-owned visual treatment. The normative model — single/multi/range/select-all/toggle, selection vs. focus/hover/active/checked/highlighted, shared selection across views, Selection Mode — is defined in [`selection.md`](selection.md) (D-068, D-078–D-088).
+
 ## States
 
 This is **Axis C (State)** of the Sonata token resolution model — applied after Axis A (abstraction, `tokens.md`) and Axis B (precedence, `theming.md`) resolve a component token's base value. See [`resolution-model.md`](resolution-model.md).

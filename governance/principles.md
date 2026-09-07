@@ -22,3 +22,8 @@
 20. **Current, actionable work takes spatial and interaction priority over historical information when a workflow distinguishes them.**
 21. **Sonata may provide powerful infrastructure underneath while exposing only the surface the current context needs.**
 22. **Customization of complex interfaces should be easy to reverse.**
+23. **Selection is a state of the underlying object or data model, not merely a visual treatment of a component.**
+24. **Sonata should support efficient selection and bulk workflows in complex software without sacrificing coherence.**
+25. **Where platform conventions for selection exist, Sonata should use them rather than inventing novel interaction rules.**
+26. **Selection must be unambiguous while remaining visually restrained enough for dense interfaces.**
+27. **When multiple items are selected or an action affects a large set, the interface should make the scope understandable.**

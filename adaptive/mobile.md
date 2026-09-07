@@ -26,6 +26,10 @@ Recommended range: Comfortable to Compact. Dense layouts must not compromise tou
 
 Mobile should not merely compress desktop tables until unreadable — prefer transformations such as table → list or persistent inspector → detail screen, without discarding important information merely to simplify layout. See [Data Display](../system/data-display.md).
 
+## Selection
+
+Selection mode may be entered using platform-appropriate gestures such as long press, temporarily transforming the interface into a selection-focused context (contextual action bar, selection counter, explicit selected states, exit affordance) while preserving the same semantic selection model as Desktop (D-086). See [Selection](../system/selection.md).
+
 ## Customization
 
 Prefer a smaller set of high-value controls such as theme, accent, text scale, interface scale, motion and contrast.

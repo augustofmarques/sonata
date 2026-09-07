@@ -26,3 +26,7 @@ Desktop should take advantage of available space when persistent orientation or 
 ## Data display
 
 Desktop may use greater information density and simultaneous context — dense tables, persistent inspectors, wide comparison views, advanced filtering — exploiting available space when it materially benefits the workflow. See [Data Display](../system/data-display.md).
+
+## Selection
+
+Desktop selection should support pointer, keyboard and modifier-based selection, Shift-based range selection and other standard platform conventions, keeping spreadsheet-like row/cell selection efficient. See [Selection](../system/selection.md).

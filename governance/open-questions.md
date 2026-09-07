@@ -106,7 +106,6 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Pinning behavior.
 - Grouping presentation.
 - Row/cell editing behavior.
-- Selection visualization.
 - Inspector anatomy and transition behavior.
 - Split View collapse rules.
 - Exact mobile transformations.
@@ -123,6 +122,17 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Maximum recommended visible mobile destinations.
 - Exact breakpoint behavior.
 - Navigation animation details.
+
+## Selection
+
+- Exact selected-row treatment.
+- Exact cell-selection behavior.
+- Selection summary placement.
+- Selection-mode transition.
+- Selection action bar anatomy.
+- Cross-page selection model.
+- Select-all scope communication.
+- Exact keyboard mappings per platform.
 
 ## Cross-cutting / Architecture
 - Exact boundary between Sonata conventions and native platform conventions.
@@ -151,7 +161,6 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Context-menu/right-click conventions.
 - Drag-and-drop and touch equivalents.
 - Gesture support boundaries.
-- Focus vs selection semantics.
 
 ## Content & Data
 - Dates, times, numbers, currencies, units and identifiers.
