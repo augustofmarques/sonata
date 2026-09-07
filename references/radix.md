@@ -16,3 +16,7 @@ Sonata adopts the following ideas:
 Sonata does not adopt Radix's default visual styling as a required identity.
 
 Radix Themes is also a reference for token architecture. Current Themes documentation exposes semantic configuration for accent color, radius, scaling and panel background/translucency, and supports remapping theme tokens. [Radix Themes](https://www.radix-ui.com/themes/docs/components/theme) [Color](https://www.radix-ui.com/themes/docs/theme/color)
+
+## Radix Icons (optional)
+
+Radix Icons is a 15×15 icon set built for Radix Primitives/Themes. It is one **optional, non-normative** compatible source for Sonata iconography — not a required dependency. Any family satisfying the Sonata iconography contract (`../expression/iconography.md`) is equally valid. [Radix Icons](https://www.radix-ui.com/icons)

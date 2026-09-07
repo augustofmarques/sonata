@@ -86,3 +86,6 @@
 
 ## D-029 — Morphing
 **Decision:** Sonata explicitly permits morphing between semantically related component states. Shape and Motion may be combined to communicate state transitions such as action → loading → success or collapsed → expanded.
+
+## D-030 — Iconography authority
+**Decision:** Sonata specifies the iconography contract (geometry, rendering coherence, named scale, semantics, states, accessibility), not the icon family. No icon family is mandatory; Radix Icons, Lucide, Phosphor, native platform iconography or custom iconography are all compatible sources provided they satisfy the contract in `expression/iconography.md`. Exact grid, stroke weight, default rendering style and size scale remain open (see Open Questions).

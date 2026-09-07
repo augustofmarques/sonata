@@ -11,7 +11,6 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Exact shape/radius values and organic geometry rules.
 - Surface/translucency tiers and blur rules.
 - Motion durations, easing and spring strategy.
-- Default icon family.
 - Exact component inventory and cross-platform APIs.
 - Platform convention boundary.
 
@@ -60,10 +59,12 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Exact morphing constraints (which state transitions qualify, how far shape may deviate mid-transition).
 
 ## Iconography
-- Default icon family.
-- Stroke/fill strategy.
-- Optical sizing.
-- Icon customization.
+- Exact grid (e.g. whether 24×24 is required).
+- Exact stroke weight (e.g. whether 1.5px is required).
+- Whether outline is the required default rendering.
+- A recommended default family.
+- Exact size scale for the named categories (inline/control/toolbar/navigation/feature-hero).
+- Icon customization (whether weight/rendering ever becomes user-facing).
 
 ## Components
 - Final component inventory.
