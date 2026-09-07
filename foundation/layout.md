@@ -2,7 +2,7 @@
 
 ## Status
 
-Decided: navigation architecture, persistent-navigation rationale, space-as-a-resource and complexity-accommodation principles (D-054–D-058). Open: exact breakpoint behavior and other specifics (see Open questions).
+Decided: navigation architecture, persistent-navigation rationale, space-as-a-resource and complexity-accommodation principles (D-054–D-058). The general composition model this principle extends to — Content Space, Region/Pane/Panel, composition modes — is defined in [`../system/composition.md`](../system/composition.md) (D-108–D-117). Open: exact breakpoint behavior and other specifics (see Open questions).
 
 Sonata uses the existing GNOME HIG guidance as its authoritative foundation for page structure, layout logic, hierarchy and information architecture.
 
@@ -54,6 +54,8 @@ Deep navigation is permitted when required by the application's domain, but navi
 ## Space as a resource
 
 Sonata uses available space when additional simultaneous information materially improves comprehension, comparison, navigation or task efficiency (D-056). Do not artificially constrain complex desktop applications to narrow central columns when the available space could meaningfully support multiple panes, navigation, inspectors, simultaneous form/data views, comparison, contextual information or persistent tool areas — and do not fill available space merely for the sake of filling it. The complexity of the application, workflow and current context determines how aggressively space should be used.
+
+The concrete regions and mechanisms this principle governs — Content Space, Pane, Panel, split/overlay/floating/modal composition, expansion, resizing — are specified in [`../system/composition.md`](../system/composition.md).
 
 ## Complexity accommodation
 

@@ -33,3 +33,6 @@
 31. **Long-running operations should be non-blocking when safely possible.**
 32. **Feedback should not cause unnecessary displacement of established interface content.**
 33. **Ongoing system conditions should be represented by stable state rather than repeated notifications.**
+34. **A Content Space may contain multiple functional regions while remaining one conceptual working context.**
+35. **Complex workflows should be organized spatially when spatial organization materially improves efficiency.**
+36. **Divide the Content Space only when regions represent meaningful functional relationships.**

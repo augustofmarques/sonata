@@ -114,6 +114,18 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Filter-builder complexity.
 - Timeline anatomy.
 
+## Composition
+
+- Exact pane minimum/maximum dimensions.
+- Resize handle behavior.
+- Collapse/expand controls.
+- Region reordering mechanics.
+- Expansion/restoration behavior.
+- Floating-region anchoring.
+- Modal vs non-modal thresholds.
+- Mobile transformation rules.
+- Workspace serialization of layout.
+
 ## Navigation
 - Exact sidebar anatomy.
 - Exact navigation rail anatomy.

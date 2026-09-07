@@ -117,6 +117,10 @@ Selection is a first-class Sonata system and semantic state of the underlying da
 
 Feedback is a first-class Sonata system category rather than an application-specific afterthought (D-089). The normative model — Inline Message, Toast, Snackbar, Banner, Alert, Progress Indicator, Status, Empty State, Notification and Notification Center, proportionality, error communication, layout stability — is defined in [`feedback.md`](feedback.md) (D-089–D-107).
 
+## Composition
+
+Composition defines how multiple interface regions are arranged within a coherent Content Space, generalizing Foundation's space-as-a-resource principle (D-056) beyond navigation and data. The normative model — Content Space, Region/Pane/Panel, composition modes, expansion, resizing, fragmentation restraint, composition-vs-navigation — is defined in [`composition.md`](composition.md) (D-108–D-117).
+
 ## States
 
 This is **Axis C (State)** of the Sonata token resolution model — applied after Axis A (abstraction, `tokens.md`) and Axis B (precedence, `theming.md`) resolve a component token's base value. See [`resolution-model.md`](resolution-model.md).

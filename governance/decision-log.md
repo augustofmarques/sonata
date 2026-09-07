@@ -320,3 +320,33 @@
 
 ## D-107 — Feedback writing
 **Decision:** Feedback follows GNOME-derived Sonata writing principles (D-013) and should favor specific, direct and actionable communication over vague error language.
+
+## D-108 — Content Space
+**Decision:** Content Space is an official Sonata concept representing a coherent semantic working context that may contain multiple coordinated regions.
+
+## D-109 — Composition concepts
+**Decision:** Region, Pane and Panel are official Sonata composition concepts.
+
+## D-110 — Context preservation
+**Decision:** When related regions belong to the same Content Space, changes to contextual regions should preserve the primary context where practical.
+
+## D-111 — Composition modes
+**Decision:** Sonata officially supports horizontal, vertical, stacked, split, overlay, floating, modal and master-detail composition.
+
+## D-112 — Region expansion
+**Decision:** Regions may temporarily expand to occupy the Content Space when detailed work benefits from additional space, with a clear mechanism to restore the previous composition.
+
+## D-113 — User-resizable composition
+**Decision:** Users may resize appropriate panes and panels, and these preferences may be persisted as Workspace state.
+
+## D-114 — Composition customization
+**Decision:** Applications may allow users to show, hide, collapse, reorder and configure contextual regions when application complexity justifies it.
+
+## D-115 — Composition fragmentation
+**Decision:** Sonata explicitly discourages unnecessary fragmentation of Content Space. Regions should exist because they represent meaningful relationships or simultaneous work.
+
+## D-116 — Composition is distinct from navigation
+**Decision:** Updating or changing a region within the same Content Space does not inherently constitute navigation.
+
+## D-117 — Adaptive composition
+**Decision:** Desktop and Mobile may use substantially different spatial compositions while preserving the same semantic relationships between regions.

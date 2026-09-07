@@ -42,3 +42,7 @@ Desktop may take advantage of persistent feedback regions and simultaneous statu
 - non-blocking progress
 
 These surfaces should not monopolize space when the information is not relevant to the current workflow. See [Feedback](../system/feedback.md).
+
+## Composition
+
+Desktop should favor simultaneous contexts, persistent panes, inspectors, multi-column forms, wide tables, tool areas and contextual panels — maximizing useful simultaneous context, not merely occupied space. See [Composition](../system/composition.md).
