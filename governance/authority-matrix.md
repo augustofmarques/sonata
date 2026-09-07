@@ -6,12 +6,17 @@ This matrix defines which layer has decision authority.
 |---|---|---|---|
 | Information architecture | GNOME HIG | Sonata | Structure first |
 | Page layout | GNOME HIG | Sonata | Expression may change salience, not structural intent |
-| Navigation | GNOME HIG | Sonata Patterns | Platform adaptation may alter presentation |
+| Navigation | GNOME HIG | Sonata System + Patterns | Platform adaptation may alter presentation; component catalog decided (D-054–D-064) |
 | Writing style | GNOME HIG | Sonata | Applies to UI copy and content patterns |
 | Accessibility semantics | GNOME HIG + platform requirements | Radix | Accessibility has final authority |
 | Keyboard/focus behavior | GNOME HIG + platform requirements | Radix | Platform conventions can affect implementation |
 | Primitive behavior | Radix-inspired | Platform | Sonata semantics remain authoritative |
 | Component architecture | Radix-inspired + Sonata | Platform | Use composable primitives |
+| Actions | Sonata System | GNOME HIG | Role hierarchy and safeguards decided (D-037–D-041); Foundation governs when/why an action appears |
+| Inputs | Sonata System | GNOME HIG | Semantic input taxonomy, validation and forms decided (D-042–D-053) |
+| Data Display | Sonata System | GNOME HIG | Table/List/Inspector/Master-Detail/Split View decided (D-065–D-077) |
+| Selection | Sonata System | GNOME HIG | Selection is data/object-model state, not component-owned styling (D-068, D-078–D-088) |
+| Feedback | Sonata System | GNOME HIG + Foundation writing | Feedback taxonomy and proportionality decided (D-089–D-107); message copy follows Foundation writing (D-013) |
 | Token architecture | Sonata | Radix | Sonata owns semantic token contract |
 | Color generation | Sonata | Radix + Material | Hybrid model |
 | Typography architecture | Sonata | Red Hat + Material + Radix | Family replaceable |
