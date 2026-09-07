@@ -34,3 +34,7 @@ A more expressive interface does not justify:
 - text inflation that obscures the task
 
 Locale-specific writing may adapt idiomatically while preserving the same semantic principles.
+
+## System feedback
+
+Feedback and notification copy (errors, empty states, confirmations, statuses) follows these same writing principles: specific, direct, concise and actionable, favoring explanation of what happened and what the user can do next over vague messages such as "Something went wrong." See [`../system/feedback.md`](../system/feedback.md) (D-107).

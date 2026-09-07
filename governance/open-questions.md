@@ -186,11 +186,23 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Shortcut discovery/remapping.
 - Exact platform back-navigation conventions to follow per platform.
 
-## Motion & Feedback
+## Motion & Haptics
 - Sound/audio feedback.
 - Haptic vocabulary and platform-strength mapping (haptics-as-a-modality is decided, D-028; the vocabulary itself — e.g. a candidate `selection / activation / success / warning / error / boundary / completion` taxonomy mapped to platform haptic strengths — is not).
-- Feedback intensity.
-- Notification interruption levels.
+
+## Feedback
+
+- Exact severity taxonomy.
+- Toast vs Snackbar terminology.
+- Exact Toast/Snackbar placement.
+- Notification Center anatomy.
+- Notification grouping mechanics.
+- Exact live-region/announcement behavior.
+- Progress component anatomy.
+- ETA formatting.
+- Exact alert interruption thresholds.
+- Feedback stacking rules.
+- Mobile/desktop presentation mappings.
 
 ## Component Governance
 - Naming conventions.

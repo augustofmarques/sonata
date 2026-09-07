@@ -30,3 +30,15 @@ Desktop may use greater information density and simultaneous context — dense t
 ## Selection
 
 Desktop selection should support pointer, keyboard and modifier-based selection, Shift-based range selection and other standard platform conventions, keeping spreadsheet-like row/cell selection efficient. See [Selection](../system/selection.md).
+
+## Feedback
+
+Desktop may take advantage of persistent feedback regions and simultaneous status visibility:
+
+- status areas
+- background-operation indicators
+- notification center
+- persistent contextual banners
+- non-blocking progress
+
+These surfaces should not monopolize space when the information is not relevant to the current workflow. See [Feedback](../system/feedback.md).

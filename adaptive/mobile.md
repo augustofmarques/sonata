@@ -30,6 +30,21 @@ Mobile should not merely compress desktop tables until unreadable — prefer tra
 
 Selection mode may be entered using platform-appropriate gestures such as long press, temporarily transforming the interface into a selection-focused context (contextual action bar, selection counter, explicit selected states, exit affordance) while preserving the same semantic selection model as Desktop (D-086). See [Selection](../system/selection.md).
 
+## Feedback
+
+Feedback may change presentation according to available space and platform conventions:
+
+```text
+inline → inline
+toast → toast
+banner → banner
+persistent status → status region
+notification → system notification / notification center
+dialog alert → platform-appropriate alert
+```
+
+The semantic feedback role remains unchanged. See [Feedback](../system/feedback.md).
+
 ## Customization
 
 Prefer a smaller set of high-value controls such as theme, accent, text scale, interface scale, motion and contrast.

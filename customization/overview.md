@@ -43,4 +43,19 @@ Each of these files describes the user/product-facing exposure surface for its d
 
 ## System-component customization
 
-Actions, Inputs, Navigation and Data Display are System-layer components rather than Expression domains, so they do not get a separate `customization/*.md` counterpart (see [D-025](../governance/decision-log.md#d-025--expressioncustomization-split-of-authorship)) — each documents its own customization surface inline in its `system/*.md` file. For Data Display, that includes columns, column order, column size, visible data, sorting, grouping, filters, visible panels, inspector visibility and workspace-specific data presentation (see [`../system/data-display.md`](../system/data-display.md)). These configurations use Sonata's token and workspace systems rather than arbitrary per-component styling.
+Actions, Inputs, Navigation, Data Display, Selection and Feedback are System-layer components rather than Expression domains, so they do not get a separate `customization/*.md` counterpart (see [D-025](../governance/decision-log.md#d-025--expressioncustomization-split-of-authorship)) — each documents its own customization surface inline in its `system/*.md` file. For Data Display, that includes columns, column order, column size, visible data, sorting, grouping, filters, visible panels, inspector visibility and workspace-specific data presentation (see [`../system/data-display.md`](../system/data-display.md)). These configurations use Sonata's token and workspace systems rather than arbitrary per-component styling.
+
+## Feedback and notification preferences
+
+Feedback presentation itself is generally not user-customized at the individual-message level.
+
+Applications may expose notification-level preferences such as:
+
+- notification categories
+- persistence
+- grouping
+- sound
+- haptic feedback
+- delivery preferences
+
+Accessibility preferences such as reduced motion and reduced transparency remain higher-priority constraints. See [`../system/feedback.md`](../system/feedback.md).

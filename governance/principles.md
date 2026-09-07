@@ -27,3 +27,9 @@
 25. **Where platform conventions for selection exist, Sonata should use them rather than inventing novel interaction rules.**
 26. **Selection must be unambiguous while remaining visually restrained enough for dense interfaces.**
 27. **When multiple items are selected or an action affects a large set, the interface should make the scope understandable.**
+28. **The prominence and persistence of feedback should match the significance, urgency and context of the event.**
+29. **Users should understand what happened and what they can do next without unnecessary dependence on documentation.**
+30. **When operations are reversible, Sonata should favor recovery mechanisms such as Undo.**
+31. **Long-running operations should be non-blocking when safely possible.**
+32. **Feedback should not cause unnecessary displacement of established interface content.**
+33. **Ongoing system conditions should be represented by stable state rather than repeated notifications.**

@@ -263,3 +263,60 @@
 
 ## D-088 — Selection visual expression
 **Decision:** Selection may use Sonata accent and Expression mechanisms, but must remain distinguishable from other states and must not depend exclusively on color.
+
+## D-089 — Feedback as a first-class system
+**Decision:** Feedback is a first-class Sonata component/system category rather than an application-specific afterthought.
+
+## D-090 — Proportional feedback
+**Decision:** Feedback presentation should be proportional to severity, urgency, persistence and context.
+
+## D-091 — Undo-first recovery
+**Decision:** When an operation is reversible, Sonata should strongly favor Undo or equivalent direct recovery.
+
+## D-092 — Progressive error communication
+**Decision:** Errors should communicate what happened, relevant consequence, and available recovery or next action when that information is available.
+
+## D-093 — Error severity
+**Decision:** Sonata distinguishes error severity independently from presentation persistence. Applications should distinguish recoverable, significant and critical errors where relevant.
+
+## D-094 — Contextual inline feedback
+**Decision:** Inline feedback is appropriate when it belongs directly to a local interaction or content context, but feedback should not unnecessarily disrupt layout.
+
+## D-095 — Layout stability
+**Decision:** Feedback should avoid unnecessary layout displacement. Floating, overlay or reserved contextual presentation may be preferred when equivalent clarity can be achieved without pushing established interface content.
+
+## D-096 — Background operations
+**Decision:** Long-running operations should remain non-blocking when safely possible, allowing users to continue unrelated work.
+
+## D-097 — Proportional completion feedback
+**Decision:** Completion feedback should be proportional to the significance of the completed operation.
+
+## D-098 — Empty State
+**Decision:** Empty State is an official Sonata component/pattern and must distinguish meaningful empty conditions such as no data, no results, filtering, loading and error.
+
+## D-099 — Progress
+**Decision:** Sonata officially supports determinate, indeterminate, staged and background progress representations, with ETA where a meaningful estimate is available.
+
+## D-100 — Persistent status
+**Decision:** Persistent status represents ongoing conditions and should update as the condition changes rather than repeatedly generate identical notifications.
+
+## D-101 — Notification system
+**Decision:** Notifications and Notification Center are official Sonata capabilities.
+
+## D-102 — Notification persistence
+**Decision:** Only events with meaningful continuing relevance should enter persistent notification history.
+
+## D-103 — Notification grouping
+**Decision:** Related notifications should be groupable when grouping reduces repetition and noise.
+
+## D-104 — Feedback color semantics
+**Decision:** Success, warning, danger and informational semantics may use Sonata semantic colors, but feedback meaning must not depend on color alone.
+
+## D-105 — Feedback motion
+**Decision:** Motion may reinforce feedback, but functional comprehension takes priority over decorative animation.
+
+## D-106 — Feedback accessibility
+**Decision:** Important and dynamic feedback must be exposed through appropriate accessibility semantics in addition to visual presentation.
+
+## D-107 — Feedback writing
+**Decision:** Feedback follows GNOME-derived Sonata writing principles (D-013) and should favor specific, direct and actionable communication over vague error language.

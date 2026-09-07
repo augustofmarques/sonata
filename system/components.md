@@ -113,6 +113,10 @@ Data-display components are a core category. The normative Sonata model — Tabl
 
 Selection is a first-class Sonata system and semantic state of the underlying data/object model, not a component-owned visual treatment. The normative model — single/multi/range/select-all/toggle, selection vs. focus/hover/active/checked/highlighted, shared selection across views, Selection Mode — is defined in [`selection.md`](selection.md) (D-068, D-078–D-088).
 
+## Feedback
+
+Feedback is a first-class Sonata system category rather than an application-specific afterthought (D-089). The normative model — Inline Message, Toast, Snackbar, Banner, Alert, Progress Indicator, Status, Empty State, Notification and Notification Center, proportionality, error communication, layout stability — is defined in [`feedback.md`](feedback.md) (D-089–D-107).
+
 ## States
 
 This is **Axis C (State)** of the Sonata token resolution model — applied after Axis A (abstraction, `tokens.md`) and Axis B (precedence, `theming.md`) resolve a component token's base value. See [`resolution-model.md`](resolution-model.md).
