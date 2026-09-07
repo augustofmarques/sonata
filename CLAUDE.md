@@ -46,9 +46,9 @@ implementation/    platform translation, tokens, validation, and the future "Son
 references/        notes on the external systems Sonata borrows from (GNOME, Radix, Material, typography)
 ```
 
-The root `README.md` is the master index/table of contents and also carries the current "working status" (what's decided vs. still open) and a "working method" section. Treat it as the entry point for navigating the spec.
+The root `README.md` is the master index/table of contents and also carries the current "working status" (what's decided vs. still open), the document status model (Decided/Recommended/Open/Reference), and a "working method" section. Treat it as the entry point for navigating the spec.
 
-**Note:** the repo root also contains stray duplicate files — `README(1).md`, `README(3).md`, plus root-level `principles.md`, `decision-log.md`, `open-questions.md` that shadow the canonical copies under `governance/`. These appear to be leftover duplicate downloads with diverging content (e.g. `README(3).md` describes a newer "Consolidated Working Draft 0.4" with a Decided/Recommended/Open/Reference status model not yet reflected in the canonical `README.md`). Don't treat any of the root-level duplicates as authoritative without checking with the user — `governance/*.md` and the root `README.md` are the ones referenced by the table of contents.
+The repo is git-tracked. Watch for repeated duplicate-download files landing at the root (e.g. `README(1).md`, `README(3).md` and similar numbered copies, or stray top-level `principles.md`/`decision-log.md`/`open-questions.md`) — these have shown up more than once as leftover browser downloads shadowing the canonical `governance/*.md` files and the root `README.md`. Before trusting one as authoritative, diff it against the canonical file it shadows; if it's a pure duplicate or a strict subset, remove it, if it has genuinely newer content, consolidate it into the canonical file instead of keeping both.
 
 ## Working method for adding/editing spec content
 

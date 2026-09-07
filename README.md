@@ -1,17 +1,17 @@
 # Sonata
 ## Design Language Specification
 
-**Status:** Working Draft 0.3  
+**Status:** Consolidated Working Draft 0.4
 **Purpose:** Master index and navigation for the Sonata design language.
 
-Sonata is a bespoke adaptive design language composed from complementary foundations:
+Sonata is a bespoke adaptive design language for desktop and mobile-class software. It combines complementary foundations without treating them as a single visual system:
 
-- **Foundation — GNOME HIG:** structure, information architecture, interaction, accessibility, writing, and content principles.
-- **System — Radix-inspired:** primitives, components, states, tokens, surfaces, theming, and reusable construction mechanisms.
-- **Expression — Material-inspired:** color, typography, shape, motion, animation, visual emphasis, and hero composition.
-- **Patterns — Sonata-native:** search, command palette, shortcuts, filtering, and power-user workflows.
-- **Adaptive — Sonata:** mobile, adaptive, and desktop classes.
-- **Customization — Sonata:** user-controlled visual and accessibility preferences.
+- **Foundation — GNOME HIG:** structure, information architecture, interaction, accessibility, writing and content principles.
+- **System — Radix-inspired:** primitives, components, states, tokens, surfaces, theming and reusable construction mechanisms.
+- **Expression — Material-inspired:** color, typography, shape, motion, animation, visual emphasis and hero composition.
+- **Patterns — Sonata-native:** search, command palette, shortcuts, data and power-user workflows.
+- **Adaptive — Sonata:** Mobile, Adaptive and Desktop classes.
+- **Customization — Sonata:** user-controlled visual preferences and accessibility preferences.
 
 ## Core principle
 
@@ -26,74 +26,79 @@ Sonata is a bespoke adaptive design language composed from complementary foundat
 5. Expression / Material-inspired techniques
 6. Component defaults
 
-The hierarchy is about decision authority, not visual imitation.
+The hierarchy concerns decision authority, not visual imitation. See [Authority Matrix](governance/authority-matrix.md) for the full per-domain breakdown.
+
+## Document status model
+
+Each module may contain content in one or more of these states:
+
+- **Decided** — normative Sonata rule.
+- **Recommended** — strong default, but replaceable.
+- **Open** — design decision not yet frozen.
+- **Reference** — borrowed idea that informs Sonata but is not itself binding.
 
 ---
 
 # Table of Contents
 
-## 00. Governance
-
+### 00. Governance
 - [Principles](governance/principles.md)
 - [Decision Log](governance/decision-log.md)
 - [Open Questions](governance/open-questions.md)
+- [Authority Matrix](governance/authority-matrix.md)
+- [Glossary](governance/glossary.md)
 
-## 01. Foundation — GNOME HIG
-
-- [Foundation Overview](foundation/overview.md)
+### 01. Foundation — GNOME HIG
+- [Overview](foundation/overview.md)
 - [Layout & Information Architecture](foundation/layout.md)
 - [Interaction & Navigation](foundation/interaction.md)
 - [Accessibility](foundation/accessibility.md)
-- [Writing & Content](foundation/writing.md)
+- [Writing](foundation/writing.md)
+- [Content](foundation/content.md)
+- [Internationalization](foundation/i18n.md)
 
-## 02. System — Radix-inspired
-
-- [System Overview](system/overview.md)
+### 02. System — Radix-inspired
+- [Overview](system/overview.md)
 - [Primitives](system/primitives.md)
 - [Components & States](system/components.md)
 - [Tokens](system/tokens.md)
 - [Surfaces & Overlays](system/surfaces.md)
 - [Theming](system/theming.md)
 
-## 03. Expression — Material-inspired
-
-- [Expression Overview](expression/overview.md)
+### 03. Expression — Material-inspired
+- [Overview](expression/overview.md)
 - [Color](expression/color.md)
 - [Typography](expression/typography.md)
-- [Shape & Geometry](expression/shape.md)
+- [Shape](expression/shape.md)
 - [Surface & Depth](expression/surface-depth.md)
 - [Spacing & Density](expression/spacing-density.md)
-- [Motion & Animation](expression/motion.md)
+- [Motion](expression/motion.md)
 - [Visual Emphasis & Hero](expression/emphasis.md)
 - [Iconography](expression/iconography.md)
 
-## 04. Adaptive
-
-- [Adaptive Overview](adaptive/overview.md)
+### 04. Adaptive
+- [Overview](adaptive/overview.md)
 - [Mobile Class](adaptive/mobile.md)
 - [Adaptive Class](adaptive/adaptive.md)
 - [Desktop Class](adaptive/desktop.md)
 - [Input Modality](adaptive/input-modality.md)
 
-## 05. Patterns
-
-- [Patterns Overview](patterns/overview.md)
+### 05. Patterns
+- [Overview](patterns/overview.md)
 - [Search](patterns/search.md)
 - [Command Palette](patterns/command-palette.md)
 - [Shortcuts](patterns/shortcuts.md)
-- [Filtering & Bulk Actions](patterns/filtering.md)
-- [Power-user Workflows](patterns/power-user.md)
+- [Data](patterns/data.md)
+- [Power User](patterns/power-user.md)
 
-## 06. Customization
-
-- [Customization Overview](customization/overview.md)
-- [Theme & Color](customization/color.md)
+### 06. Customization
+- [Overview](customization/overview.md)
+- [Color](customization/color.md)
 - [Typography](customization/typography.md)
-- [Spacing & Density](customization/spacing-density.md)
-- [Shape & Surface](customization/shape-surface.md)
-- [Motion & Accessibility](customization/motion-accessibility.md)
+- [Density](customization/density.md)
+- [Accessibility](customization/accessibility.md)
 
-## 07. Components & Patterns
+### 07. Components & Patterns (planned)
 
 This section will contain the normative component specifications after the foundations and token system are sufficiently stable.
 
@@ -114,14 +119,19 @@ This section will contain the normative component specifications after the found
 - Error states
 - Loading states
 
-## 08. Implementation
+### 08. Implementation
+- [Platform](implementation/platform.md)
+- [Tokens](implementation/tokens.md)
+- [Validation](implementation/validation.md)
+- [Sonata Skill](implementation/skill.md)
 
-Future modules for platform-specific translations:
-
-- Web
-- Qt
-- GTK
-- Other platform implementations
+### 09. References
+- [Reference index](references/README.md)
+- [GNOME](references/gnome.md)
+- [Radix](references/radix.md)
+- [Material](references/material.md)
+- [Material Expressive](references/material-expressive.md)
+- [Typography](references/typography.md)
 
 The implementation must translate Sonata, not redefine it.
 
@@ -150,7 +160,7 @@ The implementation must translate Sonata, not redefine it.
                          PATTERNS
                             │
              search · command · shortcuts
-             filtering · power workflows
+                data · power workflows
                             │
                          ADAPTIVE
                             │
@@ -163,9 +173,9 @@ The implementation must translate Sonata, not redefine it.
           PRODUCT DEFAULTS      USER CUSTOMIZATION
                  │                     │
                  └──────────┬──────────┘
-                            │
-                      ACCESSIBILITY
-                        CONSTRAINTS
+                             │
+                       ACCESSIBILITY
+                         CONSTRAINTS
                             │
                             ▼
                          UI OUTPUT
@@ -177,27 +187,26 @@ The implementation must translate Sonata, not redefine it.
 
 ## Completed / provisionally decided
 
-- Three-layer architecture: Foundation / System / Expression.
+- Three-layer architecture: Foundation / System / Expression, with Patterns, Adaptive and Customization as cross-cutting/product-facing structures.
 - GNOME HIG remains authoritative for structure and behavior.
 - GNOME writing/content principles are explicitly retained.
 - Radix is primarily a construction and token foundation, not the visual identity.
 - Material is primarily an expressive reference, not a component mandate.
-- Desktop Class and Mobile Class are distinct interaction compositions.
-- Adaptive Class bridges them.
+- Desktop Class and Mobile Class are distinct interaction compositions; Adaptive Class bridges them.
 - User customization is first-class and token-driven.
-- Accent color is highly customizable.
-- Curated color palette + advanced arbitrary accent color.
-- Neutral palette may also be customized.
-- Semantic success/warning/danger/info roles are protected.
-- Typography is system-level, not locked to one font family.
-- Recommended default typography: Red Hat Display / Text / Mono, with multilingual fallback strategy, while remaining replaceable.
-- Mono is explicitly supported for code and technical content.
-- Numeric typography is a distinct semantic concern.
+- Accent color is highly customizable; curated palette + advanced arbitrary accent color; neutral palette may also be customized. Semantic success/warning/danger/info roles are protected.
+- Typography is a system-level architecture, not locked to one font family. Recommended default: Red Hat Display / Text / Mono, with multilingual fallback strategy, while remaining replaceable. Mono is an explicit semantic role distinct from numeric typography.
 - Shape is customizable and may range from subtle to expressive/organic.
 - Translucent surfaces are supported but glassmorphism is not mandatory.
 - Density is a first-class user preference, not merely smaller padding.
-- Search, command palettes, shortcuts, and other advanced workflows are Sonata patterns, not universal requirements.
+- Search, command palettes, shortcuts and other advanced workflows are Sonata patterns, not universal requirements.
 - Primary actions may receive substantially higher visual salience when justified.
+- Sonata is specified independently of any single implementation framework; native platform conventions may be adapted at implementation time without violating Sonata semantics.
+- Accessibility and OS/user accessibility preferences may override visual customization when necessary.
+- Internationalization, locale-aware typography, RTL, text expansion and locale-sensitive formatting are first-class Sonata concerns, not implementation afterthoughts.
+- Color strategy is a hybrid architecture: Radix-style scalable semantic/alpha roles combined with Material-inspired tonal generation (exact algorithm remains open).
+
+See [Decision Log](governance/decision-log.md) for the full, numbered (D-001…) record.
 
 ## Next working area
 
@@ -215,15 +224,16 @@ The implementation must translate Sonata, not redefine it.
 ## Deliberately open
 
 - Exact numeric token scales.
-- Exact color generation algorithm.
-- Exact default neutral and accent palette.
-- Final default font recommendation beyond the Red Hat family proposal.
-- Exact shape values and organic geometry rules.
-- Surface/blur/transparency thresholds.
-- Motion curves and durations.
-- Icon family.
-- Final component inventory and APIs.
-- Platform implementation details.
+- Exact color generation algorithm; curated Sonata palette and neutral defaults.
+- Exact typography scale and variable-font strategy; final default typeface within the Red Hat + Noto architecture.
+- Exact shape/radius values and organic geometry rules.
+- Surface/translucency tiers and blur/backdrop rules.
+- Motion durations, easing and spring strategy.
+- Default icon family.
+- Final component inventory and cross-platform APIs.
+- Platform convention boundary (Web / Qt / GTK).
+
+See [Open Questions](governance/open-questions.md) for the full breakdown by domain (architecture, localization, input, content, theming, configuration UX, navigation, motion, component governance).
 
 ---
 
@@ -236,4 +246,4 @@ Each new subject should be documented in four parts where applicable:
 3. **Customization** — what the product/user may change.
 4. **Open questions** — unresolved decisions that should not be silently assumed.
 
-New decisions should be added to `governance/decision-log.md`.
+New decisions should be added to [`governance/decision-log.md`](governance/decision-log.md). Deliberately deferred decisions should be added to [`governance/open-questions.md`](governance/open-questions.md) rather than silently assumed.
