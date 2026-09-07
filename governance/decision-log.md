@@ -89,3 +89,21 @@
 
 ## D-030 — Iconography authority
 **Decision:** Sonata specifies the iconography contract (geometry, rendering coherence, named scale, semantics, states, accessibility), not the icon family. No icon family is mandatory; Radix Icons, Lucide, Phosphor, native platform iconography or custom iconography are all compatible sources provided they satisfy the contract in `expression/iconography.md`. Exact grid, stroke weight, default rendering style and size scale remain open (see Open Questions).
+
+## D-031 — Extensible component catalog
+**Decision:** Sonata defines a normative base catalog that applications may extend with product-specific components.
+
+## D-032 — Opinionated components
+**Decision:** Official Sonata components are opinionated and should provide a preferred solution for common interaction problems.
+
+## D-033 — Complexity boundary
+**Decision:** A component must not be artificially simplified when doing so would create inconsistency, obscure semantics or fail to represent a genuinely more complex interaction. Complex cases may graduate from component → compound component → pattern → application-specific component.
+
+## D-034 — Platform-equivalent implementation
+**Decision:** Sonata components should preserve semantic identity and design-language intent across platforms without requiring pixel-identical rendering.
+
+## D-035 — Composable variants
+**Decision:** Component APIs should prefer orthogonal semantic properties and token-driven composition over combinatorial variant proliferation.
+
+## D-036 — Token-based customization
+**Decision:** Components consume Sonata semantic tokens and do not expose arbitrary independent visual styling as their normal customization mechanism.

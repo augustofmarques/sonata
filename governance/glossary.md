@@ -4,7 +4,13 @@
 
 **Accent** — primary expressive color identity of an application/theme.
 
+**Application Component** — a product-specific component that extends the Sonata base catalog rather than replacing it.
+
 **Component** — reusable semantic UI building block consuming Sonata tokens.
+
+**Compound Component** — multiple coordinated primitives or Core Components composed into one semantic unit.
+
+**Core Component** — an official, opinionated Sonata component providing a preferred solution to a common interaction problem.
 
 **Density** — coordinated amount of information and spatial compression in an interface.
 

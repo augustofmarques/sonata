@@ -15,3 +15,4 @@
 13. **Power-user features are patterns, not mandatory chrome.**
 14. **Tokens are the primary interface between design decisions and customization.**
 15. **Material is inspiration, not identity. Radix is infrastructure, not identity.**
+16. **Complexity is a valid reason to introduce a new abstraction.**

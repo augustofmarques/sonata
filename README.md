@@ -101,11 +101,12 @@ Each module may contain content in one or more of these states:
 - [Motion](customization/motion.md)
 - [Accessibility](customization/accessibility.md)
 
-### 07. Components & Patterns (planned)
+### 07. Components & Patterns
 
-This section will contain the normative component specifications after the foundations and token system are sufficiently stable.
+Catalog architecture is decided — see [Components & States](system/components.md) for the Primitive → Core Component → Compound Component → Pattern → Application Component graduation ladder (D-031–D-036).
 
-- Component architecture
+Concrete component specifications remain planned, pending a stable foundation and token system:
+
 - Buttons
 - Inputs
 - Navigation
@@ -214,6 +215,7 @@ The implementation must translate Sonata, not redefine it.
 - Sonata explicitly supports morphing between semantically related states (e.g. action → loading → success), combining Shape and Motion.
 - Haptic feedback is a supported, optional interaction modality; it must never be required to understand an interaction. The specific haptic vocabulary remains open.
 - Sonata specifies the iconography contract (geometry, rendering coherence, named scale, semantics, states, accessibility), not the icon family — no family is mandatory, provided a compatible source (Radix Icons, Lucide, Phosphor, native or custom) satisfies the contract.
+- Sonata defines an extensible, opinionated component catalog (Primitive → Core Component → Compound Component → Pattern → Application Component). Complexity is a valid reason to graduate to a more specific abstraction rather than forcing an interaction into an existing component; components preserve semantic identity across platforms without pixel-identical rendering, and prefer orthogonal token-driven props over combinatorial variants.
 
 See [Decision Log](governance/decision-log.md) for the full, numbered (D-001…) record.
 
@@ -239,7 +241,7 @@ See [Decision Log](governance/decision-log.md) for the full, numbered (D-001…)
 - Surface/translucency tiers and blur/backdrop rules.
 - Motion durations, easing and spring strategy.
 - Exact icon grid, stroke weight, default rendering style and size scale (no icon family is mandated — see D-030).
-- Final component inventory and cross-platform APIs.
+- Final component inventory and exact cross-platform APIs (catalog architecture decided — D-031–D-036).
 - Platform convention boundary (Web / Qt / GTK).
 
 See [Open Questions](governance/open-questions.md) for the full breakdown by domain (architecture, localization, input, content, theming, configuration UX, navigation, motion, component governance).
