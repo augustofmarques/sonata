@@ -213,6 +213,7 @@ The implementation must translate Sonata, not redefine it.
 - Motion has a distinct Sonata personality (smooth, organic, spatially coherent) rather than simply inheriting Material's motion language; Desktop and Mobile share this personality even where technical timing adapts.
 - Sonata explicitly supports morphing between semantically related states (e.g. action → loading → success), combining Shape and Motion.
 - Haptic feedback is a supported, optional interaction modality; it must never be required to understand an interaction. The specific haptic vocabulary remains open.
+- Sonata specifies the iconography contract (geometry, rendering coherence, named scale, semantics, states, accessibility), not the icon family — no family is mandatory, provided a compatible source (Radix Icons, Lucide, Phosphor, native or custom) satisfies the contract.
 
 See [Decision Log](governance/decision-log.md) for the full, numbered (D-001…) record.
 
@@ -237,7 +238,7 @@ See [Decision Log](governance/decision-log.md) for the full, numbered (D-001…)
 - Exact shape/radius values and organic geometry rules.
 - Surface/translucency tiers and blur/backdrop rules.
 - Motion durations, easing and spring strategy.
-- Default icon family.
+- Exact icon grid, stroke weight, default rendering style and size scale (no icon family is mandated — see D-030).
 - Final component inventory and cross-platform APIs.
 - Platform convention boundary (Web / Qt / GTK).
 
