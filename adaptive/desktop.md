@@ -22,3 +22,7 @@ Desktop should take advantage of available space when persistent orientation or 
 - Navigation | Workspace | Contextual panel
 - Master | Detail
 - Master | Detail | Properties
+
+## Data display
+
+Desktop may use greater information density and simultaneous context — dense tables, persistent inspectors, wide comparison views, advanced filtering — exploiting available space when it materially benefits the workflow. See [Data Display](../system/data-display.md).

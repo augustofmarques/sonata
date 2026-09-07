@@ -99,6 +99,22 @@ These are unresolved design/implementation decisions. They are not missing docum
 - File-upload patterns.
 - Exact form-layout patterns.
 
+## Data Display
+- Exact Table anatomy.
+- Column-resize interaction.
+- Column customization UI.
+- Pinning behavior.
+- Grouping presentation.
+- Row/cell editing behavior.
+- Selection visualization.
+- Inspector anatomy and transition behavior.
+- Split View collapse rules.
+- Exact mobile transformations.
+- Virtualization integration.
+- Pagination controls.
+- Filter-builder complexity.
+- Timeline anatomy.
+
 ## Navigation
 - Exact sidebar anatomy.
 - Exact navigation rail anatomy.
@@ -139,7 +155,6 @@ These are unresolved design/implementation decisions. They are not missing docum
 
 ## Content & Data
 - Dates, times, numbers, currencies, units and identifiers.
-- Table/list conventions.
 - Truncation, wrapping, ellipsis and overflow.
 - Long-form content and line lengths.
 - Empty/loading/error/success/partial states.

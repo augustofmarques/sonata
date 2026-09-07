@@ -22,6 +22,10 @@ Mobile should be particularly careful about deep sequential navigation: prefer p
 
 Recommended range: Comfortable to Compact. Dense layouts must not compromise touch usability.
 
+## Data display
+
+Mobile should not merely compress desktop tables until unreadable — prefer transformations such as table → list or persistent inspector → detail screen, without discarding important information merely to simplify layout. See [Data Display](../system/data-display.md).
+
 ## Customization
 
 Prefer a smaller set of high-value controls such as theme, accent, text scale, interface scale, motion and contrast.

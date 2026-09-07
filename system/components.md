@@ -2,7 +2,7 @@
 
 ## Status
 
-Decided: catalog architecture and graduation ladder. Open: final component inventory, exact APIs (see Open questions). See [`actions.md`](actions.md), [`inputs.md`](inputs.md) and [`navigation.md`](navigation.md) for the normative Actions, Inputs and Navigation models.
+Decided: catalog architecture and graduation ladder. Open: final component inventory, exact APIs (see Open questions). See [`actions.md`](actions.md), [`inputs.md`](inputs.md), [`navigation.md`](navigation.md) and [`data-display.md`](data-display.md) for the normative Actions, Inputs, Navigation and Data Display models.
 
 Components are semantic building blocks composed from primitives and Sonata tokens.
 
@@ -104,6 +104,10 @@ Core navigation components include:
 - Back Navigation
 
 Sonata does not prescribe a universal navigation mechanism (D-054) — the appropriate component depends on destination count, hierarchy depth, switching frequency and available space, not a fixed default.
+
+## Data Display
+
+Data-display components are a core category. The normative Sonata model — Table, List, Grid, Tree, Master-Detail, Split View, Inspector — is defined in [`data-display.md`](data-display.md). Tables and complex data presentations are first-class Sonata components (D-065), not an afterthought bolted onto simpler layouts.
 
 ## States
 

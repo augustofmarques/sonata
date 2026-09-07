@@ -191,3 +191,42 @@
 
 ## D-064 — Navigation density
 **Decision:** Navigation participates in Sonata's global density system (see D-012, D-020, D-050). Changing density should coordinate item spacing, row heights, control dimensions, icon sizing, label spacing and group spacing without breaking navigation hierarchy or accessibility.
+
+## D-065 — Data Display as first-class system
+**Decision:** Tables, lists and complex data presentations are first-class Sonata components and patterns (see D-057, Principle 19) — Sonata must support data interfaces ranging from simple collections to highly complex professional software without an artificial simplicity ceiling.
+
+## D-066 — Table density
+**Decision:** Tables participate in Sonata's global density system (see D-012, D-020, D-050, D-064) and support Comfortable, Balanced, Compact and Dense profiles, coordinating row height, cell padding, typography, spacing, icon size and control dimensions rather than compressing individual elements independently.
+
+## D-067 — Data customization
+**Decision:** Applications may allow users to resize, reorder, show/hide and pin/freeze columns and configure sorting, filtering and grouping when appropriate. Common configuration changes should be easy to reverse (Principle 22) — undo, reset, restore defaults or saved presets rather than manual reconstruction.
+
+## D-068 — Selection models
+**Decision:** Sonata supports single, multi, range and select-all selection models where semantically appropriate, with explicit and accessible selection behavior.
+
+## D-069 — Data editing
+**Decision:** Sonata supports inline, row, cell, and inspector/form-based editing as official data-editing patterns. The editing mechanism should reflect the complexity and risk of the operation; inline editing should not be used where it would obscure validation or workflow requirements.
+
+## D-070 — Inspector
+**Decision:** Inspector is an official Sonata component/pattern providing contextual information or editing tools for the currently selected object. It may be persistent, collapsible, hidden or invoked on demand, and is not mandatory in every data interface.
+
+## D-071 — Master-Detail
+**Decision:** Master-Detail is an official Sonata pattern for selecting an item in one context and examining or editing its details in another (adjacent panel, inspector, modal, sheet or dedicated view, depending on context and interaction class).
+
+## D-072 — Split View
+**Decision:** Split View is an official Sonata pattern for simultaneous presentation of related contexts (e.g. list + detail, table + inspector). Pane count is determined by workflow utility rather than screen size alone.
+
+## D-073 — Responsive data transformation
+**Decision:** Data representations may change between Desktop and Mobile when necessary for usability (see D-063). Mobile may add interaction depth — e.g. table → list, persistent inspector → detail screen — to avoid overwhelming presentations, provided semantically relevant information remains accessible.
+
+## D-074 — Data-display expression
+**Decision:** Dense data interfaces generally use restrained visual expression, reserving stronger color, motion and emphasis for selection/active state, errors, warnings, primary actions, important status and contextual controls.
+
+## D-075 — Active vs historical priority
+**Decision:** When a domain distinguishes active, pending or in-progress work from completed or historical information, current work should generally receive greater spatial and interaction priority (Principle 20). Historical information remains accessible without automatically competing for equal prominence; the treatment is contextual rather than universal.
+
+## D-076 — Virtualization
+**Decision:** Virtualization is an official implementation capability for large data collections when applicable, without changing the semantic data-display model presented to the user.
+
+## D-077 — Workspace-integrated data configuration
+**Decision:** Data-display configuration — columns, filters, sorting, grouping, visible panels, inspector state — may be stored within Sonata Workspaces (D-060), so users can switch between contextually meaningful data-presentation arrangements.

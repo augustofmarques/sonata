@@ -19,3 +19,6 @@
 17. **Sonata does not prescribe one universal navigation mechanism.**
 18. **Use available space when additional simultaneous information materially improves comprehension, comparison, navigation or task efficiency.**
 19. **Sonata accommodates complexity rather than artificially suppressing it.**
+20. **Current, actionable work takes spatial and interaction priority over historical information when a workflow distinguishes them.**
+21. **Sonata may provide powerful infrastructure underneath while exposing only the surface the current context needs.**
+22. **Customization of complex interfaces should be easy to reverse.**

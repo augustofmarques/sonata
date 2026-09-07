@@ -64,6 +64,7 @@ Each module may contain content in one or more of these states:
 - [Actions](system/actions.md)
 - [Inputs](system/inputs.md)
 - [Navigation](system/navigation.md)
+- [Data Display](system/data-display.md)
 - [Tokens](system/tokens.md)
 - [Surfaces & Overlays](system/surfaces.md)
 - [Theming](system/theming.md)
@@ -106,12 +107,10 @@ Each module may contain content in one or more of these states:
 
 ### 07. Components & Patterns
 
-Catalog architecture is decided — see [Components & States](system/components.md) for the Primitive → Core Component → Compound Component → Pattern → Application Component graduation ladder (D-031–D-036). Actions ([`system/actions.md`](system/actions.md), D-037–D-041), Inputs ([`system/inputs.md`](system/inputs.md), D-042–D-053) and Navigation ([`system/navigation.md`](system/navigation.md), D-054–D-064) now have decided semantic models.
+Catalog architecture is decided — see [Components & States](system/components.md) for the Primitive → Core Component → Compound Component → Pattern → Application Component graduation ladder (D-031–D-036). Actions ([`system/actions.md`](system/actions.md), D-037–D-041), Inputs ([`system/inputs.md`](system/inputs.md), D-042–D-053), Navigation ([`system/navigation.md`](system/navigation.md), D-054–D-064) and Data Display ([`system/data-display.md`](system/data-display.md), D-065–D-077) now have decided semantic models.
 
 Concrete specifications for the remaining categories remain planned, pending a stable foundation and token system:
 
-- Lists
-- Tables
 - Dialogs
 - Menus
 - Sheets
@@ -219,6 +218,7 @@ The implementation must translate Sonata, not redefine it.
 - Actions have a semantic role hierarchy (Primary/Secondary/Tertiary/Quiet/Destructive) independent of visual emphasis; Split Button and Menu Button are official components. Sonata prioritizes self-explanatory interfaces (labels, iconography, state, tooltips) over offloading discoverability to documentation, and destructive actions must guard against accidental activation and communicate consequence. See [Actions](system/actions.md).
 - Inputs share a common, highly capable text-input infrastructure while keeping distinct semantic roles (Text Field/Search Field/Select/Combobox/Command Input); Select and Combobox coexist as separate official components. Validation is progressive (avoid interrupting mid-edit), required fields are explicit, Checkbox and Switch are semantically distinct, and a unified global command/search surface is intentionally scarce (typically 0–1, exceptionally 2). See [Inputs](system/inputs.md).
 - Sonata does not prescribe one universal navigation mechanism (Sidebar/Rail/Top nav/Tabs/Breadcrumbs are alternative manifestations, not competing philosophies); persistent navigation is used when it materially benefits orientation or switching, not by default. Available space is a resource — complex desktop applications should use multi-pane composition rather than being confined to a narrow single column — and Sonata accommodates applications up to CAD/enterprise complexity without an artificial simplicity ceiling. Workspaces are an official concept for persistent/temporary working contexts. See [Navigation](system/navigation.md).
+- Table, List, Inspector, Master-Detail and Split View are first-class, official Data Display components — a table is not a lesser citizen of the catalog. Data density coordinates with the global density system, common configuration changes should be reversible, dense interfaces use restrained expression, and active/current information generally takes spatial priority over historical information. Data-display configuration may live in Workspaces. See [Data Display](system/data-display.md).
 
 See [Decision Log](governance/decision-log.md) for the full, numbered (D-001…) record.
 
