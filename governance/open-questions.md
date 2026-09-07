@@ -74,7 +74,11 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Exact boundary between Sonata conventions and native platform conventions.
 - Which platform conventions may override Sonata, and under what conditions.
 - What must remain invariant across Web, Qt, GTK and mobile implementations.
-- Full token precedence model.
+- ~~Full token precedence model.~~ Resolved by D-024 / `system/resolution-model.md` (three-axis model: Abstraction, Precedence, State). Remaining sub-questions:
+  - Exact conflict rule when an application theme marks a token non-overridable but user customization still targets it.
+  - Which domains beyond color need a documented Axis-B generation algorithm (shape, motion, spacing are candidates).
+  - Whether Axis C state variants are independently themeable tokens or fixed transforms of the Axis B result.
+  - How accessibility constraints (Axis B) interact with state transitions (Axis C) — e.g. is a "pressed" motion variant removed under reduced motion, or replaced with a static equivalent?
 - Public vs private tokens.
 - Product-specific token extension rules.
 - Custom-theme validation criteria.

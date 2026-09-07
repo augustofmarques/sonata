@@ -68,3 +68,6 @@
 
 ## D-023 — Capability vs exposure
 **Decision:** Sonata capabilities exist at system level; each application decides which capabilities become user-facing controls.
+
+## D-024 — Token resolution model
+**Decision:** Any rendered value is resolved through three independent, ordered axes: Abstraction (`system/tokens.md` — which layer of specificity a token lives at), Precedence (`system/theming.md` — which source wins: Sonata defaults → application theme → user customization → accessibility constraints), and State (`system/components.md` — which interaction-state variant renders, applied last). Domain-specific generation algorithms (e.g. color's source→tonal→palette pipeline) run inside the Precedence axis rather than forming a competing pipeline. Accessibility's final authority (Principle 7, D-018) follows structurally from occupying the last position in the Precedence axis. See `system/resolution-model.md`.

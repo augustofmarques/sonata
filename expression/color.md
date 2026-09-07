@@ -6,6 +6,8 @@ Architecture decided; exact generation algorithm remains open.
 
 ## Color model
 
+This is color's domain-specific generation algorithm — it runs inside the "Sonata defaults" and "Application theme" steps of the token resolution model's Precedence axis (Axis B). See [`../system/resolution-model.md`](../system/resolution-model.md).
+
 Sonata uses a hybrid architecture:
 
 ```text

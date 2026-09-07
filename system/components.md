@@ -12,6 +12,8 @@ Components are semantic building blocks composed from primitives and Sonata toke
 
 ## States
 
+This is **Axis C (State)** of the Sonata token resolution model — applied after Axis A (abstraction, `tokens.md`) and Axis B (precedence, `theming.md`) resolve a component token's base value. See [`resolution-model.md`](resolution-model.md).
+
 Where semantically applicable:
 
 - default

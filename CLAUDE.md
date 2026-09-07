@@ -32,6 +32,16 @@ When sources conflict, resolve in this order (see `governance/authority-matrix.m
 
 Structural/semantic questions → Foundation decides. Implementation questions → System decides. Expression questions → Sonata Expression decides. Accessibility can override any visual preference, always.
 
+### Token resolution model
+
+Any rendered value resolves through three independent axes, in this order (D-024, full model in `system/resolution-model.md`):
+
+1. **Abstraction** (`system/tokens.md`) — which layer of specificity a token lives at: raw values → foundation/system tokens → semantic tokens → component tokens.
+2. **Precedence** (`system/theming.md`) — which source wins: Sonata spec defaults (including domain-specific generation algorithms, e.g. color's source→tonal→palette pipeline in `expression/color.md`) → application theme → user customization → accessibility constraints. Accessibility is last, which is the structural reason it has final authority.
+3. **State** (`system/components.md`) — which interaction-state variant (hover/pressed/disabled/…) renders, applied last, after axes 1–2 produce a base value.
+
+When adding a new domain's customization/generation rules (shape, motion, spacing, …), say explicitly which Axis-B step they run at, the way `expression/color.md` does — don't introduce a fourth competing pipeline diagram.
+
 ## Repository structure
 
 ```
@@ -75,3 +85,9 @@ When a new normative decision is made, add an entry to `governance/decision-log.
 - **Red Hat Design System** — typography reference (recommended default family architecture: Display/Text/Mono + Noto fallbacks).
 
 Sonata adopts selected ideas from these; it does not inherit their full UX or visual identity.
+
+## Known gaps (as of the 2026-09-07 audit)
+
+- **`customization/*.md` largely duplicates the "## Customization"/"## Personalization" subsections already inside the corresponding `expression/*.md` files** (e.g. `customization/color.md` vs. `expression/color.md`'s Personalization section; same pattern for typography and density), with independently drifting wording and no cross-links. Not yet reconciled — the user is deciding what to do with these (fold `customization/*` into `expression/*`'s customization sections, or keep them as a deliberately separate user-facing restatement and cross-link them). Don't silently merge or delete either side without checking.
+- **Most domain files are conceptual, not normative.** They read as prose + bullet lists ending in "## Open decisions," not concrete specs — there are no actual numeric token values, no color-generation algorithm, no type/spacing/shape scales, no motion durations, no icon family, and section "07. Components" in `README.md` is a name-only placeholder with zero component specs. `implementation/skill.md` explicitly says the Sonata skill can't be written until the spec is more concrete. Don't assume a value exists just because a concept is named — check before citing a "default" as if it were decided.
+- Only `expression/color.md`, `typography.md`, `shape.md`, `surface-depth.md`, `spacing-density.md`, `motion.md`, and `system/resolution-model.md` currently carry a `## Status` header (the Decided/Recommended/Open/Reference model from the README). The rest of the corpus doesn't use it yet.

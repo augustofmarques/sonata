@@ -64,6 +64,7 @@ Each module may contain content in one or more of these states:
 - [Tokens](system/tokens.md)
 - [Surfaces & Overlays](system/surfaces.md)
 - [Theming](system/theming.md)
+- [Token Resolution Model](system/resolution-model.md)
 
 ### 03. Expression — Material-inspired
 - [Overview](expression/overview.md)
@@ -205,12 +206,13 @@ The implementation must translate Sonata, not redefine it.
 - Accessibility and OS/user accessibility preferences may override visual customization when necessary.
 - Internationalization, locale-aware typography, RTL, text expansion and locale-sensitive formatting are first-class Sonata concerns, not implementation afterthoughts.
 - Color strategy is a hybrid architecture: Radix-style scalable semantic/alpha roles combined with Material-inspired tonal generation (exact algorithm remains open).
+- Token values resolve through a single three-axis model — Abstraction, Precedence, State — reconciling what were previously three separate, uncoordinated pipeline diagrams. See [Token Resolution Model](system/resolution-model.md).
 
 See [Decision Log](governance/decision-log.md) for the full, numbered (D-001…) record.
 
 ## Next working area
 
-**Spacing & Density**, including:
+**Spacing & Density**, including (values should be defined as Axis-B spec defaults per the [resolution model](system/resolution-model.md)):
 
 - base spacing rhythm
 - semantic spacing tokens
