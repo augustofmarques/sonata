@@ -84,6 +84,21 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Toggle vs Switch distinction.
 - Action-group layout rules.
 
+## Inputs
+- Exact field anatomy.
+- Label/help/error placement.
+- Inline vs block validation presentation.
+- Floating labels or no floating labels.
+- Field sizing.
+- Exact input tokens.
+- Select anatomy.
+- Combobox interaction.
+- Autocomplete result presentation.
+- Mobile keyboard behavior.
+- Date/time input strategy.
+- File-upload patterns.
+- Exact form-layout patterns.
+
 ## Cross-cutting / Architecture
 - Exact boundary between Sonata conventions and native platform conventions.
 - Which platform conventions may override Sonata, and under what conditions.

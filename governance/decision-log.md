@@ -122,3 +122,39 @@
 
 ## D-041 — Official Menu Button
 **Decision:** Menu Button (a primary action paired with access to related actions in a menu) is an official Sonata component.
+
+## D-042 — Semantic input distinction
+**Decision:** Sonata distinguishes semantic input roles — Text Field, Search Field, Select, Combobox, Command Input/Command Palette, and specialized inputs where genuinely required — while allowing them to share a common, highly capable text-input infrastructure. Text fields may expose composable capabilities such as clearing, validation, suggestions, autocomplete, search and contextual actions without becoming semantically equivalent to a command palette. Similar appearance does not imply identical semantics.
+
+## D-043 — Unified command/search surfaces are scarce
+**Decision:** Sonata permits unified application-level search/command surfaces when the workflow justifies them, but treats them as intentionally scarce global interaction surfaces. One global command/search surface should normally be sufficient; a second requires strong contextual justification. Sonata does not mandate a universal "super input."
+
+## D-044 — Select and Combobox coexist
+**Decision:** Select and Combobox are both official Sonata components. The choice depends on the nature, size and interaction requirements of the option set: small, stable option sets should not be forced into searchable controls, while large or difficult-to-scan option sets may justify Combobox/autocomplete behavior.
+
+## D-045 — Progressive validation
+**Decision:** Validation should occur as early as practical without unnecessarily interrupting the user's task: avoid premature interruption during editing, validate known problems after meaningful interaction or leaving the field, and validate remaining requirements at submission/completion. The underlying principle is shared across Desktop and Mobile even as exact timing adapts.
+
+## D-046 — Required field semantics
+**Decision:** Sonata explicitly communicates required fields rather than relying on widespread use of optional markers. Required status must be understandable through labels and accessible semantics.
+
+## D-047 — Checkbox and Switch distinction
+**Decision:** Checkbox represents selection or participation in a set/form context; Switch represents an on/off setting or capability whose state is persistent and immediately meaningful. They are not interchangeable visual variants.
+
+## D-048 — Slider capability
+**Decision:** Sonata Slider supports, where appropriate, single-value selection, range selection, stepped values, keyboard interaction, and direct numeric entry (or equivalent precise input) when useful. A given UI may expose only the capabilities relevant to that slider.
+
+## D-049 — Shared input model across classes
+**Decision:** Input components preserve the same semantic model across Desktop and Mobile (see D-015). Mobile implementations may adapt target size, spacing, arrangement, presentation and interaction affordances without unnecessarily creating separate semantic components.
+
+## D-050 — Input density integration
+**Decision:** Inputs participate in Sonata's global density system (D-012, D-020). Changing density must update related dimensions and spacing consistently across input components rather than independently shrinking individual fields.
+
+## D-051 — Complex forms
+**Decision:** Sonata treats complex forms as compositional patterns rather than simple sequences of label/input pairs. Official patterns should support, where appropriate, sections, groups, multi-column layouts, dependencies, progressive disclosure, summaries, validation, navigation, persistent completion actions and responsive transformation, to reduce the cognitive and interaction burden of long or complex forms.
+
+## D-052 — Autocomplete
+**Decision:** Autocomplete/typeahead is an official Sonata capability, appropriate when users need to find or select from a potentially large set of values. It should not be used merely because it is technically available.
+
+## D-053 — Consolidated input model
+**Decision:** Sonata prefers a small number of semantically meaningful input components with composable behavior over a proliferation of narrowly specialized input variants (see D-035). Differences should result in a distinct component only when they represent a distinct semantic interaction; otherwise, additional behavior should be provided compositionally. This preference for a small semantic taxonomy does not imply low capability — a common input foundation may support a rich set of composable behaviors while preserving semantic distinctions at the component and interaction level.
