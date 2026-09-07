@@ -22,7 +22,7 @@ This matrix defines which layer has decision authority.
 | Motion | Sonata | Material | Accessibility overrides |
 | Visual emphasis | Sonata | Material | Structure determines placement |
 | Hero composition | Sonata | Material Expressive | Optional composition mode |
-| Iconography | Sonata | Radix / other families | Family remains open |
+| Iconography | Sonata | Radix / other families | No family mandated by design (D-030); grid/stroke/rendering defaults open |
 | Search | Sonata Pattern | GNOME / platform | Optional by app complexity |
 | Command palette | Sonata Pattern | Platform | Power-user affordance |
 | Shortcuts | Sonata Pattern + platform | GNOME | Must remain discoverable |

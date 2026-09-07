@@ -32,7 +32,7 @@ Components may map to roles such as:
 
 The component consumes the role; the theme supplies the resulting geometry.
 
-## Shape personalities
+## Shape Profiles
 
 Sonata supports named visual directions such as:
 
@@ -42,7 +42,7 @@ Sonata supports named visual directions such as:
 - Expressive
 - Organic
 
-These are personality/profile concepts, not raw radius values.
+These are personality/profile concepts, not raw radius values. See [`../governance/glossary.md`](../governance/glossary.md) for the canonical **Shape Profile** definition.
 
 ## Organic geometry
 
