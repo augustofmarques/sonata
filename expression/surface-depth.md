@@ -85,7 +85,7 @@ Borders may communicate separation, geometry or state.
 
 ## Customization
 
-Surface treatment and translucency are eligible customization capabilities but should be exposed selectively.
+See [`../customization/shape-surface.md`](../customization/shape-surface.md) for the user/product-facing exposure surface. This file covers the surface hierarchy, treatments and elevation model that surface selects from.
 
 ## Open decisions
 

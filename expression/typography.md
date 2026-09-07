@@ -62,17 +62,7 @@ Sonata should support, where font features permit:
 
 ## Customization
 
-Typography is high-priority user customization because it directly affects readability and accessibility.
-
-Potential controls:
-
-- type family
-- text size
-- interface scale
-- line spacing
-- advanced typography where justified
-
-Applications decide which controls to expose.
+See [`../customization/typography.md`](../customization/typography.md) for the user/product-facing exposure surface (text size, interface scale, typeface, line spacing, advanced typography). This file covers the semantic role and family architecture that surface configures.
 
 ## Multilingual behavior
 

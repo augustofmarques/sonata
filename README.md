@@ -97,6 +97,8 @@ Each module may contain content in one or more of these states:
 - [Color](customization/color.md)
 - [Typography](customization/typography.md)
 - [Density](customization/density.md)
+- [Shape & Surface](customization/shape-surface.md)
+- [Motion](customization/motion.md)
 - [Accessibility](customization/accessibility.md)
 
 ### 07. Components & Patterns (planned)
@@ -207,6 +209,7 @@ The implementation must translate Sonata, not redefine it.
 - Internationalization, locale-aware typography, RTL, text expansion and locale-sensitive formatting are first-class Sonata concerns, not implementation afterthoughts.
 - Color strategy is a hybrid architecture: Radix-style scalable semantic/alpha roles combined with Material-inspired tonal generation (exact algorithm remains open).
 - Token values resolve through a single three-axis model — Abstraction, Precedence, State — reconciling what were previously three separate, uncoordinated pipeline diagrams. See [Token Resolution Model](system/resolution-model.md).
+- Expression and Customization now split cleanly per domain: `expression/*.md` owns the technical mechanism, `customization/*.md` owns the user/product-facing exposure surface, cross-linked rather than duplicated. Shape & Surface and Motion gained their own customization pages, closing a gap left by earlier drafts.
 
 See [Decision Log](governance/decision-log.md) for the full, numbered (D-001…) record.
 

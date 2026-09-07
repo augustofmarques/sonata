@@ -56,13 +56,7 @@ Examples:
 
 ## Personalization
 
-Users may choose:
-
-- curated Sonata accent
-- arbitrary custom accent in advanced mode
-- neutral identity where exposed
-
-The system derives supporting values automatically.
+See [`../customization/color.md`](../customization/color.md) for the user/product-facing exposure surface (curated accent, advanced custom input, neutral identity). This file covers the generation mechanism that surface relies on.
 
 ## Semantic safety
 

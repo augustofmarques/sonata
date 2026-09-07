@@ -42,6 +42,10 @@ Any rendered value resolves through three independent axes, in this order (D-024
 
 When adding a new domain's customization/generation rules (shape, motion, spacing, …), say explicitly which Axis-B step they run at, the way `expression/color.md` does — don't introduce a fourth competing pipeline diagram.
 
+### Editorial convention: Expression vs. Customization
+
+For any domain covered by both directories (color, typography, density, shape/surface, motion), `customization/*.md` is the canonical source for the **user/product-facing exposure surface** (what can be chosen, named options/profiles); `expression/*.md` is the canonical source for the **underlying technical mechanism** (architecture, generation algorithm, scale, semantic roles). State each fact once, cross-link the other direction — don't restate (D-025). When adding a new Expression domain that's meant to be customizable, add its `customization/*.md` counterpart in the same change; don't leave the exposure surface implied only inside the Expression file.
+
 ## Repository structure
 
 ```
@@ -88,6 +92,5 @@ Sonata adopts selected ideas from these; it does not inherit their full UX or vi
 
 ## Known gaps (as of the 2026-09-07 audit)
 
-- **`customization/*.md` largely duplicates the "## Customization"/"## Personalization" subsections already inside the corresponding `expression/*.md` files** (e.g. `customization/color.md` vs. `expression/color.md`'s Personalization section; same pattern for typography and density), with independently drifting wording and no cross-links. Not yet reconciled — the user is deciding what to do with these (fold `customization/*` into `expression/*`'s customization sections, or keep them as a deliberately separate user-facing restatement and cross-link them). Don't silently merge or delete either side without checking.
 - **Most domain files are conceptual, not normative.** They read as prose + bullet lists ending in "## Open decisions," not concrete specs — there are no actual numeric token values, no color-generation algorithm, no type/spacing/shape scales, no motion durations, no icon family, and section "07. Components" in `README.md` is a name-only placeholder with zero component specs. `implementation/skill.md` explicitly says the Sonata skill can't be written until the spec is more concrete. Don't assume a value exists just because a concept is named — check before citing a "default" as if it were decided.
 - Only `expression/color.md`, `typography.md`, `shape.md`, `surface-depth.md`, `spacing-density.md`, `motion.md`, and `system/resolution-model.md` currently carry a `## Status` header (the Decided/Recommended/Open/Reference model from the README). The rest of the corpus doesn't use it yet.

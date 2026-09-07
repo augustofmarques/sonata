@@ -66,7 +66,7 @@ Nested surfaces should preserve coherent geometric relationships rather than ind
 
 ## Customization
 
-Shape is an eligible user customization category. Applications decide whether to expose it.
+See [`../customization/shape-surface.md`](../customization/shape-surface.md) for the user/product-facing exposure surface. This file covers the shape scale, semantic geometry and personalities that surface selects from.
 
 ## Open decisions
 

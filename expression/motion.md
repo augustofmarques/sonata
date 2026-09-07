@@ -16,12 +16,7 @@ Motion communicates causality, continuity, hierarchy, state and feedback.
 
 ## Motion preference
 
-- Full
-- Reduced
-- Minimal
-- Off
-
-Applications may expose fewer options, but system reduced-motion requirements must be respected.
+See [`../customization/motion.md`](../customization/motion.md) for the user/product-facing exposure surface (Full/Reduced/Minimal/Off) and its relationship to the system reduced-motion accessibility constraint.
 
 ## Priority
 

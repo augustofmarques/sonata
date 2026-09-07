@@ -41,7 +41,7 @@ This is a starting scale inspired by the systemic spacing approach of Radix Them
 
 ## User customization
 
-Density/spacing is a high-priority user customization capability. The application may expose profiles rather than arbitrary numeric controls.
+See [`../customization/density.md`](../customization/density.md) for the user/product-facing exposure surface (density profiles). This file covers the reference spacing scale and compositional model that surface configures.
 
 ## Desktop
 

@@ -20,7 +20,7 @@
 
 **Salience** — degree of visual prominence assigned to an element.
 
-**Shape Profile** — named geometry personality such as Soft, Rounded or Expressive.
+**Shape Profile** — named geometry personality: Geometric, Soft, Rounded, Expressive or Organic.
 
 **Sonata Theme** — coherent collection of token values defining a visual configuration.
 
