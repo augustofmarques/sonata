@@ -210,6 +210,9 @@ The implementation must translate Sonata, not redefine it.
 - Color strategy is a hybrid architecture: Radix-style scalable semantic/alpha roles combined with Material-inspired tonal generation (exact algorithm remains open).
 - Token values resolve through a single three-axis model — Abstraction, Precedence, State — reconciling what were previously three separate, uncoordinated pipeline diagrams. See [Token Resolution Model](system/resolution-model.md).
 - Expression and Customization now split cleanly per domain: `expression/*.md` owns the technical mechanism, `customization/*.md` owns the user/product-facing exposure surface, cross-linked rather than duplicated. Shape & Surface and Motion gained their own customization pages, closing a gap left by earlier drafts.
+- Motion has a distinct Sonata personality (smooth, organic, spatially coherent) rather than simply inheriting Material's motion language; Desktop and Mobile share this personality even where technical timing adapts.
+- Sonata explicitly supports morphing between semantically related states (e.g. action → loading → success), combining Shape and Motion.
+- Haptic feedback is a supported, optional interaction modality; it must never be required to understand an interaction. The specific haptic vocabulary remains open.
 
 See [Decision Log](governance/decision-log.md) for the full, numbered (D-001…) record.
 

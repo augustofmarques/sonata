@@ -57,6 +57,7 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Motion hierarchy.
 - Reduced-motion transformation rules.
 - Platform-specific motion adaptation.
+- Exact morphing constraints (which state transitions qualify, how far shape may deviate mid-transition).
 
 ## Iconography
 - Default icon family.
@@ -130,7 +131,7 @@ These are unresolved design/implementation decisions. They are not missing docum
 
 ## Motion & Feedback
 - Sound/audio feedback.
-- Haptics.
+- Haptic vocabulary and platform-strength mapping (haptics-as-a-modality is decided, D-028; the vocabulary itself — e.g. a candidate `selection / activation / success / warning / error / boundary / completion` taxonomy mapped to platform haptic strengths — is not).
 - Feedback intensity.
 - Notification interruption levels.
 

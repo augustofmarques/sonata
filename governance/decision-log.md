@@ -74,3 +74,15 @@
 
 ## D-025 — Expression/Customization split of authorship
 **Decision:** For any domain covered by both an `expression/*.md` file and a `customization/*.md` file, the `customization/*.md` file is the canonical source for the user/product-facing exposure surface (what can be chosen, and the named options/profiles offered); the `expression/*.md` file is the canonical source for the underlying technical mechanism (architecture, generation algorithm, scale, semantic roles). Each file states its own content once and cross-links to the other rather than restating it. This closed a standing duplication between the two directories and the gap where `expression/shape.md`, `expression/surface-depth.md` and `expression/motion.md` described customization surfaces with no corresponding `customization/*.md` file (`shape-surface.md` and `motion.md` were added to close it).
+
+## D-026 — Sonata motion personality
+**Decision:** Sonata has a distinct motion language characterized by smooth, organic and spatially coherent transitions, with subtle transformations and selective use of spring-like behavior. Material motion is a reference rather than a normative implementation.
+
+## D-027 — Shared motion language across classes
+**Decision:** Desktop and Mobile share the same Sonata motion language and personality. Implementations may adapt technical characteristics to context, but Sonata does not define separate desktop and mobile motion aesthetics.
+
+## D-028 — Haptic interaction
+**Decision:** Haptic feedback is an optional Sonata interaction modality and should be used when supported by the platform. Haptics must be semantically meaningful and must not be required for understanding an interaction. The specific haptic vocabulary and platform-strength mapping remain open (see Open Questions).
+
+## D-029 — Morphing
+**Decision:** Sonata explicitly permits morphing between semantically related component states. Shape and Motion may be combined to communicate state transitions such as action → loading → success or collapsed → expanded.
