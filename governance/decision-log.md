@@ -107,3 +107,18 @@
 
 ## D-036 — Token-based customization
 **Decision:** Components consume Sonata semantic tokens and do not expose arbitrary independent visual styling as their normal customization mechanism.
+
+## D-037 — Action hierarchy
+**Decision:** Sonata defines Primary, Secondary, Tertiary, Quiet and Destructive semantic action roles. These roles are independent from visual emphasis (see D-005).
+
+## D-038 — Self-explanatory interface
+**Decision:** Sonata prioritizes interfaces that communicate their purpose and behavior directly through labels, established iconography, state, contextual information, hover/focus feedback, tooltips and other in-interface cues before relying on external documentation.
+
+## D-039 — Destructive action safeguards
+**Decision:** Destructive actions use a distinct semantic role and must communicate irreversible or consequential outcomes clearly, avoid accidental activation, and provide confirmation or recovery/undo where the consequence warrants it. Applications should prefer safer alternatives when practical.
+
+## D-040 — Official Split Button
+**Decision:** Split Button (a primary action paired with a menu of related alternatives) is an official Sonata component rather than an application-only pattern.
+
+## D-041 — Official Menu Button
+**Decision:** Menu Button (a primary action paired with access to related actions in a menu) is an official Sonata component.

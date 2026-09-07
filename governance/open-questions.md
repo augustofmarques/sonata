@@ -72,6 +72,18 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Compound component patterns.
 - Cross-platform implementation strategy.
 
+## Actions
+- Exact Button token dimensions.
+- Exact size scale.
+- Exact emphasis mappings.
+- Link behavior and relationship to Button.
+- Exact confirmation thresholds for destructive actions.
+- Shortcut display conventions.
+- Menu Button anatomy.
+- Split Button anatomy.
+- Toggle vs Switch distinction.
+- Action-group layout rules.
+
 ## Cross-cutting / Architecture
 - Exact boundary between Sonata conventions and native platform conventions.
 - Which platform conventions may override Sonata, and under what conditions.

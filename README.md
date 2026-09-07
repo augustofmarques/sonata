@@ -61,6 +61,7 @@ Each module may contain content in one or more of these states:
 - [Overview](system/overview.md)
 - [Primitives](system/primitives.md)
 - [Components & States](system/components.md)
+- [Actions](system/actions.md)
 - [Tokens](system/tokens.md)
 - [Surfaces & Overlays](system/surfaces.md)
 - [Theming](system/theming.md)
@@ -216,6 +217,7 @@ The implementation must translate Sonata, not redefine it.
 - Haptic feedback is a supported, optional interaction modality; it must never be required to understand an interaction. The specific haptic vocabulary remains open.
 - Sonata specifies the iconography contract (geometry, rendering coherence, named scale, semantics, states, accessibility), not the icon family — no family is mandatory, provided a compatible source (Radix Icons, Lucide, Phosphor, native or custom) satisfies the contract.
 - Sonata defines an extensible, opinionated component catalog (Primitive → Core Component → Compound Component → Pattern → Application Component). Complexity is a valid reason to graduate to a more specific abstraction rather than forcing an interaction into an existing component; components preserve semantic identity across platforms without pixel-identical rendering, and prefer orthogonal token-driven props over combinatorial variants.
+- Actions have a semantic role hierarchy (Primary/Secondary/Tertiary/Quiet/Destructive) independent of visual emphasis; Split Button and Menu Button are official components. Sonata prioritizes self-explanatory interfaces (labels, iconography, state, tooltips) over offloading discoverability to documentation, and destructive actions must guard against accidental activation and communicate consequence. See [Actions](system/actions.md).
 
 See [Decision Log](governance/decision-log.md) for the full, numbered (D-001…) record.
 

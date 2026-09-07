@@ -2,7 +2,7 @@
 
 ## Status
 
-Decided: catalog architecture and graduation ladder. Open: final component inventory, exact APIs (see Open questions).
+Decided: catalog architecture and graduation ladder. Open: final component inventory, exact APIs (see Open questions). See [`actions.md`](actions.md) for the normative Actions model.
 
 Components are semantic building blocks composed from primitives and Sonata tokens.
 
@@ -57,6 +57,34 @@ Sonata components preserve semantic identity and design-language intent across p
 ## Component APIs
 
 Component APIs should prefer orthogonal semantic properties and token-driven composition over combinatorial variant proliferation (D-035). Components consume Sonata semantic tokens and do not expose arbitrary independent visual styling as their normal customization mechanism (D-036).
+
+## Actions
+
+Actions are a core component category. The normative Sonata action model is defined in [`actions.md`](actions.md).
+
+Core actions include:
+
+- Button
+- Icon Button
+- Link
+- Toggle
+- Toggle Group
+- Menu Button
+- Split Button
+- Destructive Action
+
+Actions use orthogonal semantic properties rather than combinatorial visual variants (D-035). The primary axes are:
+
+```text
+Role
+Size
+Emphasis
+Shape
+State
+Context
+```
+
+Applications should prefer composition of these axes over creating variants such as `primary-large-rounded-expressive`. Complex interactions should graduate to specialized or compound components rather than accumulating excessive Button variants (D-033).
 
 ## States
 
