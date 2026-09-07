@@ -99,6 +99,15 @@ These are unresolved design/implementation decisions. They are not missing docum
 - File-upload patterns.
 - Exact form-layout patterns.
 
+## Navigation
+- Exact sidebar anatomy.
+- Exact navigation rail anatomy.
+- Workspace persistence model.
+- Workspace switching UI.
+- Maximum recommended visible mobile destinations.
+- Exact breakpoint behavior.
+- Navigation animation details.
+
 ## Cross-cutting / Architecture
 - Exact boundary between Sonata conventions and native platform conventions.
 - Which platform conventions may override Sonata, and under what conditions.
@@ -150,12 +159,8 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Customization in immersive/hero contexts.
 
 ## Information & Navigation Patterns
-- Navigation taxonomy across Mobile/Desktop.
-- Relationship between search and command palette retrieval.
-- Global vs contextual search.
 - Shortcut discovery/remapping.
-- Back behavior.
-- Workspace/window behavior.
+- Exact platform back-navigation conventions to follow per platform.
 
 ## Motion & Feedback
 - Sound/audio feedback.

@@ -16,3 +16,6 @@
 14. **Tokens are the primary interface between design decisions and customization.**
 15. **Material is inspiration, not identity. Radix is infrastructure, not identity.**
 16. **Complexity is a valid reason to introduce a new abstraction.**
+17. **Sonata does not prescribe one universal navigation mechanism.**
+18. **Use available space when additional simultaneous information materially improves comprehension, comparison, navigation or task efficiency.**
+19. **Sonata accommodates complexity rather than artificially suppressing it.**

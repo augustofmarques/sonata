@@ -45,3 +45,5 @@
 **Token** — semantic variable representing a reusable design decision.
 
 **User Customization** — user-controlled changes to expression-level values while preserving semantic and accessibility invariants.
+
+**Workspace** — a persistent or temporary working context (project, task, document set, tool configuration or saved arrangement) that may bundle navigation state, open documents, panel arrangement, selected tools and user configuration.

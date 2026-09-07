@@ -12,7 +12,7 @@ It may expose:
 - commands
 - shortcuts
 
-It complements ordinary discoverability and does not replace normal navigation or visible actions.
+It complements ordinary discoverability and does not replace normal navigation or visible actions (D-062). A user should be able to use the application indefinitely without knowing that a command palette exists — see [Navigation](../system/navigation.md).
 
 ## Global command/search surface restraint
 

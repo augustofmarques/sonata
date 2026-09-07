@@ -15,7 +15,10 @@ Desktop may use compact and dense modes when the workflow benefits from informat
 
 ## Multi-pane examples
 
+Desktop should take advantage of available space when persistent orientation or rapid switching materially improves productivity (D-056); it should not fill space merely for the sake of filling it.
+
 - Navigation | Content
 - Navigation | Content | Inspector
+- Navigation | Workspace | Contextual panel
 - Master | Detail
 - Master | Detail | Properties

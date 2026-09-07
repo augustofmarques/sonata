@@ -158,3 +158,36 @@
 
 ## D-053 — Consolidated input model
 **Decision:** Sonata prefers a small number of semantically meaningful input components with composable behavior over a proliferation of narrowly specialized input variants (see D-035). Differences should result in a distinct component only when they represent a distinct semantic interaction; otherwise, additional behavior should be provided compositionally. This preference for a small semantic taxonomy does not imply low capability — a common input foundation may support a rich set of composable behaviors while preserving semantic distinctions at the component and interaction level.
+
+## D-054 — Contextual navigation mechanisms
+**Decision:** Sonata does not prescribe a universal navigation mechanism (Principle 17). Sidebar, navigation rail, top navigation, tabs, breadcrumbs, drill-down and contextual navigation are alternative manifestations of navigation semantics, selected according to destination count, hierarchy depth, switching frequency, available space, workflow complexity and interaction class — not competing philosophies.
+
+## D-055 — Persistent navigation
+**Decision:** Persistent navigation should be used when persistent orientation, frequent switching between destinations, or workflow efficiency materially benefits from keeping navigation visible. It is not mandatory. Users may be allowed to collapse or hide persistent navigation when the application supports that capability, whether to recover space or simply to reduce visual presence.
+
+## D-056 — Space as a resource
+**Decision:** Sonata uses available screen space when additional simultaneous information materially improves comprehension, comparison, navigation or task efficiency (Principle 18) — complex desktop applications should not be artificially constrained to a narrow central column when the space could meaningfully support multiple panes, navigation, inspectors, simultaneous form/data views or contextual information. Space should not be filled merely for the sake of filling it; application, workflow and context complexity determine how aggressively it is used.
+
+## D-057 — Complexity accommodation
+**Decision:** Sonata must support applications ranging from simple sites through moderately complex applications, professional productivity software and highly complex software up to CAD/engineering/enterprise environments, without an artificial simplicity ceiling (Principle 19). Complexity should be organized, spatially legible, hierarchically structured, discoverable and customizable rather than artificially hidden.
+
+## D-058 — Multi-level navigation
+**Decision:** Deep navigation is permitted when required by the application's domain, but navigation depth should be minimized when equivalent access can be provided through clearer composition, simultaneous visibility, direct navigation, search or workspace organization — avoiding unnecessary menu/submenu chains when a workflow could be expressed more directly.
+
+## D-059 — Breadcrumbs
+**Decision:** Breadcrumbs are an official Sonata navigation component, primarily providing orientation, hierarchy awareness and contextual navigation in complex hierarchical environments. Breadcrumb items should be interactive where navigation semantics permit; breadcrumbs supplement navigation rather than necessarily replacing primary navigation.
+
+## D-060 — Workspaces
+**Decision:** Workspace is an official Sonata concept for organizing a persistent or temporary working context — a project, task context, user workflow, document set, tool configuration or saved arrangement — including navigation state, open documents, visible/arranged panels, selected tools and user configuration. Workspaces are especially valuable in complex professional software.
+
+## D-061 — Navigation customization
+**Decision:** When application complexity justifies it, users may customize navigation and workspaces — showing/hiding, reordering or pinning destinations, collapsing navigation, choosing visible tool sets, and workspace-specific navigation/tool arrangements (create/rename/save/restore/switch, reorder, hide, pin, restore defaults) — consistent with capability being global while exposure remains contextual (D-017, Principle 9).
+
+## D-062 — Command palette relationship
+**Decision:** Command palettes and global search surfaces (D-014, D-043) supplement navigation and must not replace ordinary visible navigation. A user should be able to use an application indefinitely without knowing a command palette exists — command surfaces remain power-user capabilities, not a substitute for discoverable navigation.
+
+## D-063 — Mobile navigation adaptation
+**Decision:** Mobile may use a materially different navigation presentation from Desktop while the semantic navigation architecture — the destination hierarchy — remains consistent (see D-015). Mobile should not simply render a compressed desktop sidebar when another navigation mechanism better fits the interaction environment, and should be particularly careful about deep sequential navigation, preferring progressive disclosure, drill-down, contextual navigation, direct navigation or search over unnecessary nested menus.
+
+## D-064 — Navigation density
+**Decision:** Navigation participates in Sonata's global density system (see D-012, D-020, D-050). Changing density should coordinate item spacing, row heights, control dimensions, icon sizing, label spacing and group spacing without breaking navigation hierarchy or accessibility.

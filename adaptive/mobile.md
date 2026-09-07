@@ -14,7 +14,9 @@ Mobile is not a scaled-down desktop layout.
 
 ## Navigation
 
-Prefer contextual navigation, bottom navigation, tabs or hierarchical navigation where appropriate.
+Prefer contextual navigation, bottom navigation, tabs or hierarchical navigation where appropriate. The semantic navigation architecture stays consistent with Desktop even as the presentation changes (D-063) — a desktop Sidebar destination and a mobile navigation destination refer to the same place, reached differently. Mobile should not simply render a compressed desktop sidebar when another mechanism fits the interaction environment better.
+
+Mobile should be particularly careful about deep sequential navigation: prefer progressive disclosure, hierarchical drill-down, contextual navigation, direct navigation or search over unnecessary nested menus (D-058). See [`../system/navigation.md`](../system/navigation.md) for the component catalog.
 
 ## Density
 

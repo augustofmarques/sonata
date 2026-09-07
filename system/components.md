@@ -2,7 +2,7 @@
 
 ## Status
 
-Decided: catalog architecture and graduation ladder. Open: final component inventory, exact APIs (see Open questions). See [`actions.md`](actions.md) for the normative Actions model.
+Decided: catalog architecture and graduation ladder. Open: final component inventory, exact APIs (see Open questions). See [`actions.md`](actions.md), [`inputs.md`](inputs.md) and [`navigation.md`](navigation.md) for the normative Actions, Inputs and Navigation models.
 
 Components are semantic building blocks composed from primitives and Sonata tokens.
 
@@ -85,6 +85,25 @@ Context
 ```
 
 Applications should prefer composition of these axes over creating variants such as `primary-large-rounded-expressive`. Complex interactions should graduate to specialized or compound components rather than accumulating excessive Button variants (D-033).
+
+## Inputs
+
+Inputs are a core component category. The normative Sonata input model — semantic taxonomy, validation, forms — is defined in [`inputs.md`](inputs.md).
+
+## Navigation
+
+Navigation components are a core category. The normative Sonata navigation model is defined in [`navigation.md`](navigation.md).
+
+Core navigation components include:
+
+- Sidebar
+- Navigation Rail
+- Top Navigation
+- Tabs
+- Breadcrumbs
+- Back Navigation
+
+Sonata does not prescribe a universal navigation mechanism (D-054) — the appropriate component depends on destination count, hierarchy depth, switching frequency and available space, not a fixed default.
 
 ## States
 
