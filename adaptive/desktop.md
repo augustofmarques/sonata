@@ -46,3 +46,7 @@ These surfaces should not monopolize space when the information is not relevant 
 ## Composition
 
 Desktop should favor simultaneous contexts, persistent panes, inspectors, multi-column forms, wide tables, tool areas and contextual panels — maximizing useful simultaneous context, not merely occupied space. See [Composition](../system/composition.md).
+
+## Application shell
+
+Desktop-class applications may use a rich shell — persistent navigation, toolbars, multiple tool areas, inspectors, status, multiple windows across multiple monitors — relying on native window chrome rather than duplicating it. See [Application Shell](../system/application-shell.md).

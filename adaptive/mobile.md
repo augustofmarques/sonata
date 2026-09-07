@@ -49,6 +49,10 @@ The semantic feedback role remains unchanged. See [Feedback](../system/feedback.
 
 Mobile should favor focused contexts, progressive disclosure and sequential presentation of regions that Desktop shows simultaneously — adding an interaction step rather than compressing everything on-screen at once. The semantic relationship between regions stays the same; only the spatial manifestation changes. See [Composition](../system/composition.md).
 
+## Application shell
+
+Mobile-class applications should use a more focused shell: elements that stay persistent on Desktop (toolbars, tool areas, secondary navigation) may become contextual, collapsible, navigated, floating or bottom-anchored instead, while the semantic role stays consistent. See [Application Shell](../system/application-shell.md).
+
 ## Customization
 
 Prefer a smaller set of high-value controls such as theme, accent, text scale, interface scale, motion and contrast.

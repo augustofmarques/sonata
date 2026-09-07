@@ -68,6 +68,9 @@ Each module may contain content in one or more of these states:
 - [Selection](system/selection.md)
 - [Feedback](system/feedback.md)
 - [Composition](system/composition.md)
+- [Application Shell](system/application-shell.md)
+- [Window](system/window.md)
+- [Toolbar](system/toolbar.md)
 - [Tokens](system/tokens.md)
 - [Surfaces & Overlays](system/surfaces.md)
 - [Theming](system/theming.md)
@@ -101,6 +104,7 @@ Each module may contain content in one or more of these states:
 - [Feedback](patterns/feedback.md)
 - [Notifications](patterns/notifications.md)
 - [Composition](patterns/composition.md)
+- [Workspace](patterns/workspace.md)
 - [Power User](patterns/power-user.md)
 
 ### 06. Customization
@@ -114,7 +118,7 @@ Each module may contain content in one or more of these states:
 
 ### 07. Components & Patterns
 
-Catalog architecture is decided — see [Components & States](system/components.md) for the Primitive → Core Component → Compound Component → Pattern → Application Component graduation ladder (D-031–D-036). Actions ([`system/actions.md`](system/actions.md), D-037–D-041), Inputs ([`system/inputs.md`](system/inputs.md), D-042–D-053), Navigation ([`system/navigation.md`](system/navigation.md), D-054–D-064), Data Display ([`system/data-display.md`](system/data-display.md), D-065–D-077), Selection ([`system/selection.md`](system/selection.md), D-068, D-078–D-088), Feedback ([`system/feedback.md`](system/feedback.md), D-089–D-107) and Composition ([`system/composition.md`](system/composition.md), D-108–D-117) now have decided semantic models.
+Catalog architecture is decided — see [Components & States](system/components.md) for the Primitive → Core Component → Compound Component → Pattern → Application Component graduation ladder (D-031–D-036). Actions ([`system/actions.md`](system/actions.md), D-037–D-041), Inputs ([`system/inputs.md`](system/inputs.md), D-042–D-053), Navigation ([`system/navigation.md`](system/navigation.md), D-054–D-064), Data Display ([`system/data-display.md`](system/data-display.md), D-065–D-077), Selection ([`system/selection.md`](system/selection.md), D-068, D-078–D-088), Feedback ([`system/feedback.md`](system/feedback.md), D-089–D-107), Composition ([`system/composition.md`](system/composition.md), D-108–D-117) and Application Shell ([`system/application-shell.md`](system/application-shell.md), [`system/window.md`](system/window.md), [`system/toolbar.md`](system/toolbar.md), D-118–D-129) now have decided semantic models.
 
 Concrete specifications for the remaining categories remain planned, pending a stable foundation and token system:
 
@@ -122,7 +126,6 @@ Concrete specifications for the remaining categories remain planned, pending a s
 - Menus
 - Sheets
 - Cards
-- Toolbars
 - Data visualization
 
 ### 08. Implementation
@@ -225,6 +228,7 @@ The implementation must translate Sonata, not redefine it.
 - Selection is a first-class semantic state of the underlying data/object model (single/multi/range/select-all/toggle), distinct from focus/hover/active/checked/highlighted, and shareable across views (Table/List/Inspector) rather than owned independently by each. Meaningful multi-selection exposes a summary and contextual bulk actions, integrates with undo where reversible, and may persist across filtering/sorting/pagination with scope kept clear. Spreadsheet-like row/cell selection and Selection Mode (including a mobile long-press variant) are official patterns; selection must never depend solely on color. See [Selection](system/selection.md).
 - Feedback is a first-class system covering Inline Message/Toast/Snackbar/Banner/Alert/Progress/Status/Empty State/Notification/Notification Center. Feedback presentation is proportional to severity/urgency/persistence/context; reversible operations strongly favor Undo; errors communicate what happened, consequence and next action; long-running work stays non-blocking where safe; and feedback avoids unnecessary layout displacement or notification spam for an unchanged condition. Haptics for feedback follow the general haptics rule (D-028) rather than a separate one. See [Feedback](system/feedback.md).
 - Composition generalizes space-as-a-resource (D-056) into an official model: a Content Space may hold multiple coordinated Regions/Panes/Panels without becoming separate navigation destinations. Sonata prefers simultaneous presentation when it materially helps, but explicitly discourages fragmenting a Content Space into regions with no meaningful relationship. Regions may expand, be resized, collapsed or floated, with layout preferences persisted in Workspaces; changing a region's content is not navigation. Desktop and Mobile compose the same semantic relationships spatially differently. See [Composition](system/composition.md).
+- Application Shell defines the outer framework — native window chrome (used rather than duplicated), an optional compact header, navigation, tool areas, Content Space, status and overlays — within which Composition and Workspace operate. Toolbar is compositional (not inherently horizontal) with distinguishable application/view/selection/tool scopes. Multiple windows and multi-monitor workflows are official capabilities; Workspace (window's working context), Window (its presentation container) and Document/View (content within it) are distinct concepts. Mobile substantially reduces persistent shell chrome while keeping the same semantic relationships. See [Application Shell](system/application-shell.md).
 
 See [Decision Log](governance/decision-log.md) for the full, numbered (D-001…) record.
 

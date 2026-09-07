@@ -126,11 +126,22 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Mobile transformation rules.
 - Workspace serialization of layout.
 
+## Application Shell
+
+- Exact compact-header anatomy.
+- Native chrome integration per platform.
+- Toolbar overflow behavior.
+- Toolbar customization UI.
+- Multiple-window/workspace relationship.
+- Multi-monitor restore policy.
+- Exact docking model.
+- Floating panel anchoring.
+- Shell layout persistence format.
+- Fullscreen transition behavior.
+
 ## Navigation
 - Exact sidebar anatomy.
 - Exact navigation rail anatomy.
-- Workspace persistence model.
-- Workspace switching UI.
 - Maximum recommended visible mobile destinations.
 - Exact breakpoint behavior.
 - Navigation animation details.

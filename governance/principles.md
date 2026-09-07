@@ -36,3 +36,8 @@
 34. **A Content Space may contain multiple functional regions while remaining one conceptual working context.**
 35. **Complex workflows should be organized spatially when spatial organization materially improves efficiency.**
 36. **Divide the Content Space only when regions represent meaningful functional relationships.**
+37. **When the platform already provides appropriate window chrome, Sonata should use it rather than adding redundant application chrome.**
+38. **Application chrome exists to organize and expose functionality, not to consume space for its own sake.**
+39. **Toolbar orientation and placement should follow workflow, space and platform rather than a universal horizontal rule.**
+40. **A Window is a presentation container. A Workspace is a working context and configuration.**
+41. **Applications with substantial workflows may legitimately require persistent navigation, tool areas, inspectors, toolbars, multiple windows and contextual controls when those elements represent real workflow relationships.**

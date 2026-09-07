@@ -350,3 +350,39 @@
 
 ## D-117 — Adaptive composition
 **Decision:** Desktop and Mobile may use substantially different spatial compositions while preserving the same semantic relationships between regions.
+
+## D-118 — Native window chrome
+**Decision:** Sonata applications should primarily rely on native platform window chrome rather than duplicating title-bar functionality inside application content.
+
+## D-119 — Optional compact application header
+**Decision:** A separate application header is optional. It should be compact and introduced only when contextual identity or controls materially benefit from it.
+
+## D-120 — Toolbar as compositional system
+**Decision:** Toolbars are official Sonata components and are not constrained to horizontal layouts. They may be horizontal, vertical, docked, floating, contextual or inline according to workflow and platform.
+
+## D-121 — Toolbar scope
+**Decision:** Toolbar actions may belong to application, view, selection or tool scope. These scopes must remain semantically distinguishable.
+
+## D-122 — Multiple windows
+**Decision:** Multiple application windows are an official Sonata capability when independent or simultaneous contexts materially benefit the workflow.
+
+## D-123 — Multi-monitor support
+**Decision:** Sonata applications should accommodate multi-monitor workflows where supported by the platform.
+
+## D-124 — Window state
+**Decision:** Applications may preserve useful window state such as geometry, maximization, fullscreen and workspace association according to platform conventions.
+
+## D-125 — Shell/content distinction
+**Decision:** Application chrome, content, contextual UI, transient UI and system UI remain conceptually distinct.
+
+## D-126 — Workspace/window distinction
+**Decision:** Workspace is a working context; Window is a presentation container for that context; Document/View represents content within it.
+
+## D-127 — Shell customization
+**Decision:** Applications may expose user customization of navigation, tool visibility, toolbar contents, docking, panel dimensions and layout when justified by application complexity.
+
+## D-128 — Compact mobile shell
+**Decision:** Mobile may substantially reduce persistent application chrome while preserving the same semantic relationships and allowing contextual access to functionality.
+
+## D-129 — Shell expression
+**Decision:** Application shells may express product identity, but expressive treatment must remain subordinate to application orientation and workflow.

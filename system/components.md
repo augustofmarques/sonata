@@ -121,6 +121,10 @@ Feedback is a first-class Sonata system category rather than an application-spec
 
 Composition defines how multiple interface regions are arranged within a coherent Content Space, generalizing Foundation's space-as-a-resource principle (D-056) beyond navigation and data. The normative model — Content Space, Region/Pane/Panel, composition modes, expansion, resizing, fragmentation restraint, composition-vs-navigation — is defined in [`composition.md`](composition.md) (D-108–D-117).
 
+## Application Shell
+
+Application Shell is the outer framework — native window chrome, optional compact header, navigation, tool areas, Content Space, status, overlays — within which Composition and Workspace operate. The normative model, including Window and Toolbar as dedicated components and the Workspace→Window→Content Space→View relationship, is defined in [`application-shell.md`](application-shell.md), [`window.md`](window.md) and [`toolbar.md`](toolbar.md) (D-118–D-129).
+
 ## States
 
 This is **Axis C (State)** of the Sonata token resolution model — applied after Axis A (abstraction, `tokens.md`) and Axis B (precedence, `theming.md`) resolve a component token's base value. See [`resolution-model.md`](resolution-model.md).
