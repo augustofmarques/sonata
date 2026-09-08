@@ -129,6 +129,10 @@ Application Shell is the outer framework — native window chrome, optional comp
 
 Disclosure reveals, hides, expands or collapses information or functionality while preserving the current semantic context — distinct from navigation, which changes context (D-130). The normative model — Accordion, Collapsible, Expandable Row, Menu, Context Menu, progressive disclosure, depth restraint — is defined in [`disclosure.md`](disclosure.md) (D-130–D-140).
 
+## Overlays
+
+Overlays present contextual, temporary or focused content above the current Content Space without necessarily changing the underlying semantic context — distinct from both Disclosure (stays within context) and navigation (changes destination). The normative model — Popover, Tooltip, Dialog, Modal, Sheet, Drawer, Floating Panel, Full-screen Overlay, modal scope, nesting restraint, promotion to persistent UI — is defined in [`overlays.md`](overlays.md) (D-141–D-155).
+
 ## States
 
 This is **Axis C (State)** of the Sonata token resolution model — applied after Axis A (abstraction, `tokens.md`) and Axis B (precedence, `theming.md`) resolve a component token's base value. See [`resolution-model.md`](resolution-model.md).

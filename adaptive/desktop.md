@@ -54,3 +54,7 @@ Desktop-class applications may use a rich shell — persistent navigation, toolb
 ## Disclosure
 
 Desktop should favor simultaneous visibility for repeatedly needed information or tools, reserving disclosure (Accordion, Collapsible, Menu) for advanced options and secondary tool areas rather than as a substitute for using available space well. See [Disclosure](../system/disclosure.md).
+
+## Overlays
+
+Desktop may retain more contextual information simultaneously through floating panels, drawers, inspectors, non-modal overlays and persistent tool regions when this materially improves workflow efficiency, rather than defaulting to modal interruption. See [Overlays](../system/overlays.md).

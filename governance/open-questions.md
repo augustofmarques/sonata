@@ -122,7 +122,6 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Region reordering mechanics.
 - Expansion/restoration behavior.
 - Floating-region anchoring.
-- Modal vs non-modal thresholds.
 - Mobile transformation rules.
 - Workspace serialization of layout.
 
@@ -135,9 +134,21 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Multiple-window/workspace relationship.
 - Multi-monitor restore policy.
 - Exact docking model.
-- Floating panel anchoring.
 - Shell layout persistence format.
 - Fullscreen transition behavior.
+
+## Overlays
+
+- Exact Popover sizing rules.
+- Exact Tooltip timing/placement.
+- Exact Dialog size classes.
+- Sheet vs Drawer terminology.
+- Floating Panel docking model.
+- Overlay promotion interaction.
+- Full-screen overlay thresholds.
+- Overlay stacking/z-order implementation.
+- Accessibility announcement behavior.
+- Platform-specific dismissal mappings.
 
 ## Disclosure
 

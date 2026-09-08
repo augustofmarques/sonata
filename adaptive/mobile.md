@@ -57,6 +57,10 @@ Mobile-class applications should use a more focused shell: elements that stay pe
 
 Mobile may use more progressive disclosure than Desktop because available space is limited, accepting additional interaction steps to prevent visual overload — but critical functionality must remain reachable without relying on obscure gestures. See [Disclosure](../system/disclosure.md).
 
+## Overlays
+
+Mobile overlay presentation may differ substantially from Desktop — larger, bottom-anchored, side-anchored, full-screen or sequential when this improves touch interaction or comprehension — while the semantic role stays the same. Full-screen is a contextual option the task may justify, not a universal mobile default. See [Overlays](../system/overlays.md).
+
 ## Customization
 
 Prefer a smaller set of high-value controls such as theme, accent, text scale, interface scale, motion and contrast.

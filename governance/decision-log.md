@@ -419,3 +419,48 @@
 
 ## D-140 — Disclosure and motion
 **Decision:** Disclosure transitions should use Sonata Motion where motion improves causal and spatial understanding.
+
+## D-141 — Overlay system
+**Decision:** Overlays are a first-class Sonata system including Popover, Tooltip, Contextual Surface, Dialog, Modal, Sheet, Drawer, Floating Panel and Full-screen Overlay.
+
+## D-142 — Tooltip as supplementary assistance
+**Decision:** Tooltip is supplementary contextual assistance rather than a required information mechanism. Essential information must not depend exclusively on tooltip or hover.
+
+## D-143 — Contextual assistance
+**Decision:** Sonata supports a broader contextual-assistance model including labels, supporting text, previews, hover/focus hints, tooltips and contextual status. Applications should choose the least intrusive mechanism that provides sufficient explanation.
+
+## D-144 — Dialog restraint
+**Decision:** Dialogs may support focused information, confirmation, forms and short multi-step flows, but should not become containers for large or overly complex workflows.
+
+## D-145 — Modal scope
+**Decision:** Modal overlays should block only the context that actually requires blocking rather than automatically blocking the whole application.
+
+## D-146 — Sheet and Drawer
+**Decision:** Sheet and Drawer are official Sonata overlay/composition mechanisms and may appear from different directions according to context and platform.
+
+## D-147 — Inspector presentation independence
+**Decision:** Inspector may be presented as a docked panel, floating panel, sheet, overlay or modal while retaining its Inspector semantics.
+
+## D-148 — User-controlled floating workspace
+**Decision:** Appropriate floating panels and tool surfaces may be movable, resizable, pinnable, collapsible and dismissible, allowing users to shape their workspace.
+
+## D-149 — Overlay persistence
+**Decision:** Applications may offer to promote repeatedly used temporary overlays into persistent workspace regions. This transition should be easy and non-blocking.
+
+## D-150 — No nested overlays
+**Decision:** Sonata does not support arbitrary overlay-within-overlay chains. Complex workflows should move into a more appropriate composition.
+
+## D-151 — Overlay focus restoration
+**Decision:** Dismissed overlays should restore focus to their originating logical control or context where applicable.
+
+## D-152 — Platform-consistent dismissal
+**Decision:** Sonata follows established platform conventions for dismissal, including Escape on Desktop where appropriate, while preserving semantic consistency across platforms.
+
+## D-153 — Mobile overlay adaptation
+**Decision:** Mobile may use larger overlay presentations, including full-screen treatment when justified by the task, but should not make overlays full-screen solely because of viewport size.
+
+## D-154 — Overlay expression
+**Decision:** Sonata encourages contextual use of translucency, blur, shape and motion for overlays when these improve spatial understanding without impairing work.
+
+## D-155 — Context preservation
+**Decision:** Closing an overlay should preserve the originating context and relevant state whenever practical.

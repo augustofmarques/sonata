@@ -44,3 +44,7 @@
 42. **Progressive disclosure should reduce initial complexity without unnecessarily hiding useful functionality.**
 43. **Revealing additional content should not unnecessarily remove or replace the user's current context.**
 44. **Deep chains of nested disclosure or menus should trigger reconsideration of the information architecture and composition.**
+45. **An overlay should remain clearly related to the context that produced it.**
+46. **Modal interruption should be reserved for situations that genuinely require focused attention.**
+47. **When users repeatedly need a temporary surface, the application may offer an easy way to make it persistent.**
+48. **Supplementary information may be progressively revealed through contextual assistance, but essential information must remain directly accessible.**
