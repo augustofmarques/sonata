@@ -53,6 +53,10 @@ Mobile should favor focused contexts, progressive disclosure and sequential pres
 
 Mobile-class applications should use a more focused shell: elements that stay persistent on Desktop (toolbars, tool areas, secondary navigation) may become contextual, collapsible, navigated, floating or bottom-anchored instead, while the semantic role stays consistent. See [Application Shell](../system/application-shell.md).
 
+## Disclosure
+
+Mobile may use more progressive disclosure than Desktop because available space is limited, accepting additional interaction steps to prevent visual overload — but critical functionality must remain reachable without relying on obscure gestures. See [Disclosure](../system/disclosure.md).
+
 ## Customization
 
 Prefer a smaller set of high-value controls such as theme, accent, text scale, interface scale, motion and contrast.

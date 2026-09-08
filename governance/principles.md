@@ -41,3 +41,6 @@
 39. **Toolbar orientation and placement should follow workflow, space and platform rather than a universal horizontal rule.**
 40. **A Window is a presentation container. A Workspace is a working context and configuration.**
 41. **Applications with substantial workflows may legitimately require persistent navigation, tool areas, inspectors, toolbars, multiple windows and contextual controls when those elements represent real workflow relationships.**
+42. **Progressive disclosure should reduce initial complexity without unnecessarily hiding useful functionality.**
+43. **Revealing additional content should not unnecessarily remove or replace the user's current context.**
+44. **Deep chains of nested disclosure or menus should trigger reconsideration of the information architecture and composition.**

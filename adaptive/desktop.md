@@ -50,3 +50,7 @@ Desktop should favor simultaneous contexts, persistent panes, inspectors, multi-
 ## Application shell
 
 Desktop-class applications may use a rich shell — persistent navigation, toolbars, multiple tool areas, inspectors, status, multiple windows across multiple monitors — relying on native window chrome rather than duplicating it. See [Application Shell](../system/application-shell.md).
+
+## Disclosure
+
+Desktop should favor simultaneous visibility for repeatedly needed information or tools, reserving disclosure (Accordion, Collapsible, Menu) for advanced options and secondary tool areas rather than as a substitute for using available space well. See [Disclosure](../system/disclosure.md).

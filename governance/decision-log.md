@@ -386,3 +386,36 @@
 
 ## D-129 — Shell expression
 **Decision:** Application shells may express product identity, but expressive treatment must remain subordinate to application orientation and workflow.
+
+## D-130 — Disclosure as a first-class system
+**Decision:** Disclosure is a first-class Sonata component/pattern family for revealing and collapsing related information without changing semantic context.
+
+## D-131 — Progressive disclosure
+**Decision:** Progressive disclosure is an official Sonata principle for managing complexity, but must not be used to arbitrarily hide functionality that users need.
+
+## D-132 — Accordion and Collapsible
+**Decision:** Accordion and Collapsible are distinct official components. Accordion groups related sections; Collapsible represents an independently expandable region.
+
+## D-133 — Expandable rows
+**Decision:** Expandable rows are an official pattern for brief details belonging directly to items in lists and tables.
+
+## D-134 — Disclosure depth
+**Decision:** Nested disclosure is permitted when justified, but excessive nesting should be avoided. Sonata uses contextual judgment rather than a universal hard numeric limit.
+
+## D-135 — Menu and Context Menu
+**Decision:** Menu and Context Menu are official Sonata components for actions and choices. They are not substitutes for primary application navigation.
+
+## D-136 — Menu depth
+**Decision:** Deeply nested menus are strongly discouraged. Applications should prefer direct actions, composition, contextual panels, search or command surfaces when they provide clearer access.
+
+## D-137 — Hover disclosure
+**Decision:** Hover may expose supplementary information or low-risk controls, but critical functionality must not depend exclusively on hover.
+
+## D-138 — Touch disclosure
+**Decision:** Touch may use established gestures such as long press or swipe for contextual disclosure, but critical functionality must remain accessible without obscure gestures.
+
+## D-139 — Disclosure and workspace
+**Decision:** User-configured expansion/collapse states may become part of Workspace state when useful.
+
+## D-140 — Disclosure and motion
+**Decision:** Disclosure transitions should use Sonata Motion where motion improves causal and spatial understanding.

@@ -34,3 +34,7 @@ When appropriate, applications may let users (D-061):
 - restore defaults
 
 Applications determine which capabilities are exposed — capability is global, exposure is contextual (Principle 9, D-017).
+
+## Disclosure
+
+Complexity-rich, professional and power-user software should organize its capabilities through Disclosure (Accordion, Collapsible, Menu, Context Menu, progressive disclosure) rather than hiding functionality behind excessive nesting. See [`../system/disclosure.md`](../system/disclosure.md) (D-130–D-140).

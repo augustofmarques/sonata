@@ -263,6 +263,8 @@ A user may remain within the same Content Space while:
 
 This reduces unnecessary navigation and preserves context.
 
+Expanding or collapsing content locally is Disclosure, not Composition or navigation — see [`disclosure.md`](disclosure.md) (D-130).
+
 ## Composition vs workspace
 
 Composition defines the current arrangement.

@@ -139,6 +139,18 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Shell layout persistence format.
 - Fullscreen transition behavior.
 
+## Disclosure
+
+- Exact Accordion anatomy.
+- Single-open vs multiple-open defaults.
+- Exact nesting heuristics.
+- Expandable-row height behavior.
+- Menu overflow rules.
+- Submenu presentation.
+- Context-menu touch equivalent.
+- Disclosure animation timings.
+- Workspace persistence details.
+
 ## Navigation
 - Exact sidebar anatomy.
 - Exact navigation rail anatomy.
@@ -181,7 +193,6 @@ These are unresolved design/implementation decisions. They are not missing docum
 ## Input & Interaction
 - Guarantees for keyboard, pointer, touch, pen and assistive technology.
 - Haptic feedback on mobile.
-- Context-menu/right-click conventions.
 - Drag-and-drop and touch equivalents.
 - Gesture support boundaries.
 

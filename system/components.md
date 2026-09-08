@@ -125,6 +125,10 @@ Composition defines how multiple interface regions are arranged within a coheren
 
 Application Shell is the outer framework — native window chrome, optional compact header, navigation, tool areas, Content Space, status, overlays — within which Composition and Workspace operate. The normative model, including Window and Toolbar as dedicated components and the Workspace→Window→Content Space→View relationship, is defined in [`application-shell.md`](application-shell.md), [`window.md`](window.md) and [`toolbar.md`](toolbar.md) (D-118–D-129).
 
+## Disclosure
+
+Disclosure reveals, hides, expands or collapses information or functionality while preserving the current semantic context — distinct from navigation, which changes context (D-130). The normative model — Accordion, Collapsible, Expandable Row, Menu, Context Menu, progressive disclosure, depth restraint — is defined in [`disclosure.md`](disclosure.md) (D-130–D-140).
+
 ## States
 
 This is **Axis C (State)** of the Sonata token resolution model — applied after Axis A (abstraction, `tokens.md`) and Axis B (precedence, `theming.md`) resolve a component token's base value. See [`resolution-model.md`](resolution-model.md).
