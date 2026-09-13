@@ -72,3 +72,18 @@ A document may exist inside a workspace without defining the complete workspace 
 ## Workspace restoration
 
 Applications may restore the last active workspace or allow users to explicitly select one when reopening.
+
+## Workspace state boundaries
+
+Workspace may preserve (D-188):
+
+- layout
+- tool visibility
+- panel dimensions
+- table configuration
+- navigation arrangement
+- selected contextual preferences
+
+Workspace should not indiscriminately preserve transient operational state.
+
+Restore only state that remains meaningful when the workspace is reopened. See [`../system/state.md`](../system/state.md) (D-176, D-188).

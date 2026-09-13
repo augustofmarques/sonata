@@ -35,7 +35,11 @@ When selection exists, relevant bulk actions should become discoverable and cont
 
 ## Reversible operations
 
-Operations affecting selections should integrate with undo/redo when practical.
+Operations affecting selections should integrate with undo/redo when practical. See [`../system/operations.md`](../system/operations.md).
+
+## Selection as state
+
+Selection's distinctness from focus/hover/active and its sharing across views (D-079, D-080) are instances of the general Domain-vs-UI-state split and shared-state-across-views model in [`../system/state.md`](../system/state.md) (D-175, D-187).
 
 ## Spreadsheet workflow
 

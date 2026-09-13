@@ -19,3 +19,21 @@ No critical function should rely solely on a single modality when an equivalent 
 ## Advanced interaction patterns
 
 Search, command palettes, shortcuts, filtering, bulk actions and other power-user capabilities are supported as optional Sonata patterns. They should be introduced when the application workflow justifies them rather than being mandatory features.
+
+## State and interaction
+
+Interaction should be understood through semantic state rather than purely visual changes. The normative state model is defined in [`../system/state.md`](../system/state.md) (D-175–D-191).
+
+The implementation should distinguish:
+
+- focus
+- hover
+- selection
+- activation
+- editing
+- expansion
+- availability
+- persistence
+- operation state
+
+State changes should remain understandable even when visual effects such as motion or color are reduced.

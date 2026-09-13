@@ -521,3 +521,54 @@
 
 ## D-174 — Content Space alignment
 **Decision:** Multiple containers and regions within one Content Space should share intentional alignment contexts so that the interface remains visually and semantically coherent.
+
+## D-175 — Domain and UI state separation
+**Decision:** Sonata explicitly distinguishes domain/application state from UI/interaction state. Components present state but do not define semantic state solely through visual treatment.
+
+## D-176 — State persistence scopes
+**Decision:** Sonata recognizes Persistent, Session, Workspace and Transient state scopes.
+
+## D-177 — Composable state
+**Decision:** Independent state dimensions should compose rather than be represented through a giant mutually exclusive enumeration.
+
+## D-178 — Availability-state distinctions
+**Decision:** Unavailable, Disabled, Read-only, Locked and Hidden are distinct semantic states.
+
+## D-179 — Disabled restraint
+**Decision:** Applications should avoid using disabled state as the sole explanation for unavailable actions when useful explanatory context can be provided.
+
+## D-180 — Read-only semantics
+**Decision:** Read-only content may remain selectable, copyable, navigable or inspectable where appropriate.
+
+## D-181 — Dirty state
+**Decision:** Unsaved/dirty state is an official Sonata application state.
+
+## D-182 — Saved and synced distinction
+**Decision:** Saved and Synced are distinct semantic states and may coexist in combinations such as saved+syncing or dirty+offline.
+
+## D-183 — Offline/degraded state
+**Decision:** Offline, limited-connectivity and degraded operation are official Sonata operational states. Applications should continue operating when safely possible and communicate the current condition.
+
+## D-184 — Synchronization conflict
+**Decision:** Synchronization conflict is an official state with explicit representation of local changes, remote changes, conflict and resolution where applicable.
+
+## D-185 — Optimistic operations
+**Decision:** Sonata supports optimistic interaction when safe, while requiring truthful distinction between locally applied and remotely confirmed state when the difference matters.
+
+## D-186 — Operations as first-class concepts
+**Decision:** User/system operations may be represented as semantic entities with lifecycle, progress, feedback, recovery and undo relationships.
+
+## D-187 — Shared state across views
+**Decision:** Views representing the same data or context should observe shared semantic state rather than maintain conflicting independent copies.
+
+## D-188 — Workspace state boundaries
+**Decision:** Workspace may preserve meaningful UI and working-context state but should not indiscriminately restore obsolete transient operational state.
+
+## D-189 — State-triggered feedback
+**Decision:** State changes may drive feedback, motion, haptics, notifications and workspace changes where contextually appropriate, but no feedback channel is universally mandatory.
+
+## D-190 — State accessibility
+**Decision:** Semantic state must be exposed through appropriate accessibility mechanisms and must not depend solely on visual expression.
+
+## D-191 — Platform-independent state model
+**Decision:** Sonata's state and operation semantics are framework and platform agnostic.

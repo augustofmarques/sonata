@@ -38,3 +38,7 @@ Applications determine which capabilities are exposed — capability is global, 
 ## Disclosure
 
 Complexity-rich, professional and power-user software should organize its capabilities through Disclosure (Accordion, Collapsible, Menu, Context Menu, progressive disclosure) rather than hiding functionality behind excessive nesting. See [`../system/disclosure.md`](../system/disclosure.md) (D-130–D-140).
+
+## Operations as commands
+
+Where an application exposes a command system, commands should correspond to meaningful operations rather than arbitrary UI events (Principle 61). This allows commands, undo/redo, feedback and operation history to describe the same semantic action consistently. See [`../system/operations.md`](../system/operations.md).

@@ -2,7 +2,7 @@
 
 ## Status
 
-Decided: catalog architecture and graduation ladder. Open: final component inventory, exact APIs (see Open questions). See [`actions.md`](actions.md), [`inputs.md`](inputs.md), [`navigation.md`](navigation.md) and [`data-display.md`](data-display.md) for the normative Actions, Inputs, Navigation and Data Display models.
+Decided: catalog architecture and graduation ladder. Open: final component inventory, exact APIs (see Open questions). See [`actions.md`](actions.md), [`inputs.md`](inputs.md), [`navigation.md`](navigation.md), [`data-display.md`](data-display.md), [`selection.md`](selection.md), [`feedback.md`](feedback.md), [`composition.md`](composition.md), [`containers.md`](containers.md), [`application-shell.md`](application-shell.md), [`disclosure.md`](disclosure.md), [`overlays.md`](overlays.md), [`state.md`](state.md) and [`operations.md`](operations.md) for the normative per-domain models.
 
 Components are semantic building blocks composed from primitives and Sonata tokens.
 
@@ -137,9 +137,13 @@ Disclosure reveals, hides, expands or collapses information or functionality whi
 
 Overlays present contextual, temporary or focused content above the current Content Space without necessarily changing the underlying semantic context — distinct from both Disclosure (stays within context) and navigation (changes destination). The normative model — Popover, Tooltip, Dialog, Modal, Sheet, Drawer, Floating Panel, Full-screen Overlay, modal scope, nesting restraint, promotion to persistent UI — is defined in [`overlays.md`](overlays.md) (D-141–D-155).
 
+## State & Operations
+
+Sonata defines a unified semantic model for domain/application state, UI/interaction state, workspace/session/transient persistence scopes, and user/system Operations — preventing individual components from inventing incompatible concepts of state. The normative model is defined in [`state.md`](state.md) and [`operations.md`](operations.md) (D-175–D-191).
+
 ## States
 
-This is **Axis C (State)** of the Sonata token resolution model — applied after Axis A (abstraction, `tokens.md`) and Axis B (precedence, `theming.md`) resolve a component token's base value. See [`resolution-model.md`](resolution-model.md).
+This is **Axis C (State)** of the Sonata token resolution model — applied after Axis A (abstraction, `tokens.md`) and Axis B (precedence, `theming.md`) resolve a component token's base value. See [`resolution-model.md`](resolution-model.md). These are the rendering variants a semantic state (defined in [`state.md`](state.md)) may resolve to — Axis C is about which visual variant renders, not about state semantics themselves.
 
 Where semantically applicable:
 

@@ -57,3 +57,39 @@ Notification history should contain meaningful events rather than every ephemera
 Feedback presentation should be proportional to severity.
 
 Higher severity may increase prominence and persistence, but severity does not automatically imply modal interruption.
+
+## State-driven feedback
+
+Feedback should represent semantic state rather than isolated visual events. See [`../system/state.md`](../system/state.md) (D-189).
+
+Example:
+
+```text
+Operation
+  ↓
+running
+  ↓
+persistent status
+
+Operation
+  ↓
+completed
+  ↓
+completion feedback
+
+Operation
+  ↓
+failed
+  ↓
+error + recovery
+```
+
+## Offline/degraded feedback
+
+When application behavior continues in offline or degraded mode, the UI should communicate the current operating condition (D-183).
+
+It should not repeatedly notify the user about an unchanged condition.
+
+## Optimistic feedback
+
+Optimistic actions should communicate provisional state when the distinction matters (D-185).

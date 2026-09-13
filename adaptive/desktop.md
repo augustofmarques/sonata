@@ -62,3 +62,7 @@ Desktop may retain more contextual information simultaneously through floating p
 ## Containers
 
 Desktop may use more generous indentation where screen space permits — tree and hierarchy-heavy interfaces may use substantial indentation when it meaningfully improves scanning. See [Containers](../system/containers.md).
+
+## State
+
+Desktop applications with persistent background work (sync, export, long-running jobs) should keep operations non-blocking and expose their state through persistent status rather than forcing the user to wait. See [State](../system/state.md) and [Operations](../system/operations.md).

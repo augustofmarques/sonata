@@ -54,3 +54,10 @@
 52. **Rounded, floating, translucent and glass-like surfaces are legitimate Sonata expression mechanisms when they improve spatial understanding and do not impair work.**
 53. **Apple HIG may inform platform-aware composition, adaptive behavior and material expression but does not override GNOME HIG as the Foundation.**
 54. **Tablet and intermediate environments may combine touch-first interaction with flexible desktop-like spatial composition.**
+55. **Components present state; they do not define state solely through visual appearance.**
+56. **Independent conditions should remain independently representable.**
+57. **Local persistence and remote synchronization are distinct states.**
+58. **Applications should communicate offline, degraded, syncing and similar conditions when they materially affect user expectations or behavior.**
+59. **Optimistic interaction may improve responsiveness, but the UI must distinguish local application from confirmed persistence when the difference matters.**
+60. **Session and workspace restoration should not resurrect obsolete transient conditions.**
+61. **Power-user commands, undo/redo and feedback should be able to describe the same underlying semantic operation.**

@@ -72,6 +72,19 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Compound component patterns.
 - Cross-platform implementation strategy.
 
+## State
+
+- Exact state-token naming conventions.
+- State serialization boundaries.
+- Session persistence policy.
+- Workspace-state schema.
+- Optimistic-state timeout/reconciliation patterns.
+- Conflict-resolution UI patterns.
+- Operation cancellation semantics.
+- Operation history retention.
+- Cross-view state synchronization implementation.
+- Platform accessibility mappings.
+
 ## Actions
 - Exact Button token dimensions.
 - Exact size scale.

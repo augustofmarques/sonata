@@ -65,6 +65,10 @@ Mobile overlay presentation may differ substantially from Desktop — larger, bo
 
 Mobile may reduce indentation magnitude when screen width is constrained, but must preserve discernible hierarchy — adapting through disclosure, labels or grouping rather than letting the hierarchy become ambiguous. See [Containers](../system/containers.md).
 
+## State
+
+Offline, degraded-connectivity and syncing conditions are especially common on Mobile; the UI should communicate the current condition without repeatedly notifying about an unchanged state, and should let the user continue unrelated work when safely possible. See [State](../system/state.md).
+
 ## Customization
 
 Prefer a smaller set of high-value controls such as theme, accent, text scale, interface scale, motion and contrast.
