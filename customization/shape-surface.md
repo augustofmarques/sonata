@@ -4,7 +4,7 @@ Shape and surface treatment are secondary-priority customization categories (see
 
 ## Shape
 
-Users may be offered a shape personality (Geometric, Soft, Rounded, Expressive, Organic) rather than raw radius values. The application decides whether shape is user-facing or fixed by product identity. See [`../expression/shape.md`](../expression/shape.md) for the personalities, the shape scale and how components map to shape roles.
+Users may be offered a shape personality (Subtle, Soft, Rounded, Expressive, Organic) rather than raw radius values. The application decides whether shape is user-facing or fixed by product identity. See [`../expression/shape.md`](../expression/shape.md) for the personalities, the shape scale and how components map to shape roles.
 
 ## Surface
 

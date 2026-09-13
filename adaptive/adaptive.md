@@ -33,3 +33,7 @@ Example:
 ```
 
 Supporting regions (tool panels, secondary navigation, contextual panels) may temporarily move out of the way — collapsing, docking, floating or hiding — when the user needs maximum space for manipulating the primary content, then return without forcing the user to reconstruct the previous arrangement. See [Composition](../system/composition.md) and [Containers](../system/containers.md) for the underlying mechanisms.
+
+## Density
+
+Adaptive-Class environments (including Tablet) support Comfortable, Balanced and Compact unconditionally, plus Dense conditionally on window size, input modality, application complexity and interaction target requirements (D-208). See [Spacing & Density](../expression/spacing-density.md).

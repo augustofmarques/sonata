@@ -611,3 +611,24 @@
 
 ## D-204 — Token implementation openness
 **Decision:** Component-token access is available to implementers when necessary, but component-token manipulation is distinct from ordinary user-facing customization.
+
+## D-205 — Concrete spacing baseline
+**Decision:** Sonata adopts a v1 candidate spacing baseline of 0, 2, 4, 6, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80 and 96 units for semantic/system use, exposed through semantic aliases (`space.control`, `space.group`, `space.section`, etc.) that components should prefer over raw scale values.
+
+## D-206 — Balanced default density
+**Decision:** Balanced is the default Sonata density profile.
+
+## D-207 — Density profiles
+**Decision:** Sonata defines Comfortable, Balanced, Compact and Dense density profiles as the general model Data Display's table density (D-066) already applies.
+
+## D-208 — Class-specific density availability
+**Decision:** Mobile supports Comfortable, Balanced and Compact; Adaptive Class (including Tablet) supports those plus conditional Dense; Desktop supports all four unconditionally.
+
+## D-209 — Shape personalities
+**Decision:** Sonata defines Subtle, Soft, Rounded, Expressive and Organic shape personalities. "Subtle" renames the personality previously called "Geometric" for clarity.
+
+## D-210 — Shape profiles are mappings
+**Decision:** Shape personalities map semantic shape roles (`shape.control`, `shape.card`, `shape.dialog`, etc.) to concrete geometry and are not themselves fixed radius values.
+
+## D-211 — Shape/surface independence
+**Decision:** Shape and surface/material are independent dimensions and may be combined freely within accessibility and semantic constraints.

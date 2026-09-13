@@ -7,8 +7,8 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Exact hybrid color generation algorithm.
 - Curated Sonata palette and neutral defaults.
 - Exact typography scale and variable-font strategy.
-- Exact spacing scale and density transforms.
-- Exact shape/radius values and organic geometry rules.
+- ~~Exact spacing scale~~ Resolved by D-205 (v1 candidate baseline). Density transform tables per profile remain open.
+- Exact shape/radius values per personality; organic geometry formal definition remains open.
 - Surface/translucency tiers and blur rules.
 - Motion durations, easing and spring strategy.
 - Exact component inventory and cross-platform APIs.
@@ -30,10 +30,9 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Detailed locale/script fallback table.
 
 ## Shape
-- Exact radius values.
-- Relationship between component shape tokens and global shape profiles.
+- Exact radius values per shape token and personality.
 - Formal definition of organic geometry.
-- How shape profiles affect different components.
+- Shape transition/morphing mappings.
 
 ## Surface
 - Exact translucency tiers.
@@ -43,11 +42,12 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Whether glass is ever the default for specific platform classes.
 
 ## Spacing & Density
-- Exact base spacing scale.
-- Density profiles and their transform tables.
+- ~~Exact base spacing scale.~~ Resolved by D-205 (v1 candidate baseline: 0/2/4/6/8/12/16/20/24/32/40/48/64/80/96).
+- ~~Density profiles.~~ Resolved by D-206/D-207/D-208 (Comfortable/Balanced/Compact/Dense, Balanced default, per-class availability). Exact per-profile transform tables remain open.
 - Interface-scale relationship.
 - Mobile density constraints.
 - Touch-target invariants.
+- Tablet/Adaptive Dense-availability heuristics (window size, modality, complexity thresholds).
 - Whether users can separately control spacing and density or whether one control maps both.
 
 ## Motion

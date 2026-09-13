@@ -11,7 +11,7 @@ Desktop Class prioritizes:
 - contextual toolbars
 - power-user workflows
 
-Desktop may use compact and dense modes when the workflow benefits from information efficiency.
+Desktop supports all four density profiles — Comfortable, Balanced, Compact and Dense — the only class where Dense is unconditionally available (D-208). See [Spacing & Density](../expression/spacing-density.md).
 
 ## Multi-pane examples
 

@@ -2,47 +2,57 @@
 
 ## Status
 
-Architecture decided; exact values remain open.
+Decided: the shape scale token names, the semantic-role list, the five named shape personalities (Subtle/Soft/Rounded/Expressive/Organic), personalities as role→geometry mappings rather than fixed values, and shape/surface independence (D-209–D-211). Open: exact radius values per token/personality, organic-shape vocabulary (see Open questions).
 
 Shape is an expressive and semantic dimension, not a single global border radius.
 
 ## Shape scale
 
-Conceptual scale:
+Sonata maintains a base geometric scale (D-210):
 
-- none
-- xs
-- sm
-- md
-- lg
-- xl
-- 2xl
-- full
+```text
+shape.none
+shape.xs
+shape.sm
+shape.md
+shape.lg
+shape.xl
+shape.2xl
+shape.full
+```
+
+Do not equate these tokens with a single universal radius across all components — exact per-token, per-personality values remain open.
 
 ## Semantic geometry
 
-Components may map to roles such as:
+Components consume semantic shape roles such as (D-210):
 
-- control
-- container
-- surface
-- overlay
-- indicator
-- hero
+```text
+shape.control
+shape.control-compact
+shape.container
+shape.card
+shape.panel
+shape.popover
+shape.dialog
+shape.floating
+shape.hero
+shape.indicator
+```
 
-The component consumes the role; the theme supplies the resulting geometry.
+The component consumes the role; the active shape personality supplies the resulting geometry.
 
 ## Shape Profiles
 
-Sonata supports named visual directions such as:
+Sonata defines five named shape personalities (D-209):
 
-- Geometric
-- Soft
-- Rounded
-- Expressive
-- Organic
+- **Subtle** — minimal geometric emphasis. (Previously referred to as "Geometric" in this file and in `governance/glossary.md`; renamed for clarity — "Geometric" read as "more shape," when the intent is the opposite: restrained, low-ornamentation geometry.)
+- **Soft** — moderately rounded geometry with restrained character.
+- **Rounded** — clearly rounded controls and containers.
+- **Expressive** — more pronounced geometric hierarchy and shape contrast.
+- **Organic** — shape may incorporate softer or non-rectangular geometry where context permits.
 
-These are personality/profile concepts, not raw radius values. See [`../governance/glossary.md`](../governance/glossary.md) for the canonical **Shape Profile** definition.
+These are personality/profile concepts that map semantic shape roles to concrete geometry, not raw radius values themselves (D-210). See [`../governance/glossary.md`](../governance/glossary.md) for the canonical **Shape Profile** definition.
 
 ## Organic geometry
 
@@ -56,6 +66,8 @@ Organic geometry may include:
 
 It should be concentrated in expressive contexts and not undermine dense functional interfaces.
 
+Appropriate contexts include hero surfaces, expressive controls, onboarding, empty states, decorative regions and highly expressive product-specific components; use in dense data interfaces should generally be restrained.
+
 ## Pill rule
 
 Pill geometry is contextual and semantic. Not every component should become a pill simply because a theme is rounded.
@@ -66,7 +78,7 @@ Nested surfaces should preserve coherent geometric relationships rather than ind
 
 ## Shape and surface independence
 
-Shape does not imply a particular material.
+Shape and surface/material are independent dimensions and may be combined freely within accessibility and semantic constraints (D-211).
 
 A rounded rectangle may be:
 
@@ -76,6 +88,8 @@ A rounded rectangle may be:
 - outlined
 - flat
 - elevated
+
+A material surface may in turn be rounded, subtle, organic or custom without requiring one specific geometry.
 
 Similarly, a surface does not require rectangular geometry.
 

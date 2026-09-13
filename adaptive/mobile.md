@@ -20,7 +20,7 @@ Mobile should be particularly careful about deep sequential navigation: prefer p
 
 ## Density
 
-Recommended range: Comfortable to Compact. Dense layouts must not compromise touch usability.
+Mobile supports Comfortable, Balanced and Compact (D-208); Dense is not a Mobile profile. Dense-adjacent layouts must not compromise touch usability. See [Spacing & Density](../expression/spacing-density.md).
 
 ## Data display
 

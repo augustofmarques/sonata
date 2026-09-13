@@ -84,7 +84,7 @@
 
 **Semantic Token** — a stable token representing a design meaning rather than a raw visual value.
 
-**Shape Profile** — named geometry personality: Geometric, Soft, Rounded, Expressive or Organic.
+**Shape Profile** — named geometry personality: Subtle, Soft, Rounded, Expressive or Organic (D-209; "Subtle" was previously named "Geometric").
 
 **Sonata Theme** — coherent collection of token values defining a visual configuration; the result of one or more Preferences, and a Preset is a predefined one.
 
