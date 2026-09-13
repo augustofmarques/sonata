@@ -64,6 +64,54 @@ Pill geometry is contextual and semantic. Not every component should become a pi
 
 Nested surfaces should preserve coherent geometric relationships rather than independently choosing unrelated radii.
 
+## Shape and surface independence
+
+Shape does not imply a particular material.
+
+A rounded rectangle may be:
+
+- solid
+- translucent
+- glass-like
+- outlined
+- flat
+- elevated
+
+Similarly, a surface does not require rectangular geometry.
+
+## Rounded floating geometry
+
+Sonata explicitly permits rounded floating rectangles as a common expressive surface (D-171).
+
+These may be used for:
+
+- panels
+- menus
+- sidebars
+- inspectors
+- popovers
+- tool surfaces
+- contextual controls
+
+## Non-rectangular expression
+
+Sonata permits non-rectangular expressive forms where appropriate.
+
+These may include:
+
+- organic shapes
+- asymmetrical geometry
+- masked surfaces
+- custom silhouettes
+
+The shape system must remain coherent with the surrounding interface.
+
+## Platform-inspired material expression
+
+Sonata may draw visual inspiration from contemporary platform material systems, including translucent and layered surfaces, without becoming platform-specific. See [Apple HIG](../references/apple-hig.md) as a secondary reference (D-173).
+
+Shape remains a Sonata semantic/expression concern.
+
 ## Customization
 
 See [`../customization/shape-surface.md`](../customization/shape-surface.md) for the user/product-facing exposure surface. This file covers the shape scale, semantic geometry and personalities that surface selects from.

@@ -2,7 +2,7 @@
 
 ## Status
 
-Decided: Content Space and Region/Pane/Panel as official concepts, composition modes, context preservation, region expansion, user-resizable/customizable composition, fragmentation restraint, composition-vs-navigation distinction, and adaptive composition across Desktop/Mobile (D-108–D-117). Simultaneous-presentation and space-as-a-resource are the general Foundation principle this domain applies (D-056, Principle 18, [`../foundation/layout.md`](../foundation/layout.md)) rather than a separately restated rule. Open: exact pane dimensions, resize/collapse mechanics, floating-region anchoring, modal-vs-non-modal thresholds, mobile transformation rules, workspace layout serialization (see Open questions).
+Decided: Content Space and Region/Pane/Panel as official concepts, composition modes, context preservation, region expansion, user-resizable/customizable composition, fragmentation restraint, composition-vs-navigation distinction, adaptive composition across Desktop/Mobile, and tablet/intermediate composition (D-108–D-117, D-170). Simultaneous-presentation and space-as-a-resource are the general Foundation principle this domain applies (D-056, Principle 18, [`../foundation/layout.md`](../foundation/layout.md)) rather than a separately restated rule; the Container/Group/Section/Card/Panel taxonomy that composes within a Content Space lives in [`containers.md`](containers.md) (D-156–D-171, D-174). Open: exact pane dimensions, resize/collapse mechanics, floating-region anchoring, mobile transformation rules, workspace layout serialization (see Open questions).
 
 ## Purpose
 
@@ -411,6 +411,52 @@ Platforms may implement:
 
 according to their own conventions, provided Sonata's semantic relationships remain intact.
 
+## Container composition
+
+Containers participate within the broader Composition system. See [`containers.md`](containers.md) (D-156–D-171, D-174).
+
+A Content Space may contain multiple containers and regions while remaining one semantic working context.
+
+Containers should establish relationships through:
+
+- alignment
+- grouping
+- hierarchy
+- spatial proximity
+- indentation
+- shared regions
+
+rather than requiring every group to receive an independent surface.
+
+## Intermediate / tablet composition
+
+Between Mobile and Desktop, applications may combine (D-170):
+
+- persistent content
+- collapsible side regions
+- floating tool surfaces
+- temporary overlays
+- flexible side panels
+
+A supporting region may temporarily move out of the way when the user needs maximum space for manipulating the primary content.
+
+The relationship between the regions remains part of the same Content Space. See [Adaptive Class](../adaptive/adaptive.md).
+
+## Container manipulation
+
+Where appropriate, users may manipulate containers and regions through:
+
+- resize
+- reposition
+- collapse
+- expansion
+- docking
+- undocking
+- pinning
+- visibility
+
+These changes may be stored in Workspace state.
+
 ## Open questions
 
-See [`../governance/open-questions.md`](../governance/open-questions.md) (## Composition) for what remains open: exact pane minimum/maximum dimensions, resize-handle behavior, collapse/expand controls, region-reordering mechanics, expansion/restoration behavior, floating-region anchoring, modal-vs-non-modal thresholds, mobile transformation rules, and workspace serialization of layout.
+See [`../governance/open-questions.md`](../governance/open-questions.md) (## Composition) for what remains open: exact pane minimum/maximum dimensions, resize-handle behavior, collapse/expand controls, region-reordering mechanics, expansion/restoration behavior, floating-region anchoring, mobile transformation rules, and workspace serialization of layout.

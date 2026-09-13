@@ -61,6 +61,10 @@ Mobile may use more progressive disclosure than Desktop because available space 
 
 Mobile overlay presentation may differ substantially from Desktop — larger, bottom-anchored, side-anchored, full-screen or sequential when this improves touch interaction or comprehension — while the semantic role stays the same. Full-screen is a contextual option the task may justify, not a universal mobile default. See [Overlays](../system/overlays.md).
 
+## Containers
+
+Mobile may reduce indentation magnitude when screen width is constrained, but must preserve discernible hierarchy — adapting through disclosure, labels or grouping rather than letting the hierarchy become ambiguous. See [Containers](../system/containers.md).
+
 ## Customization
 
 Prefer a smaller set of high-value controls such as theme, accent, text scale, interface scale, motion and contrast.

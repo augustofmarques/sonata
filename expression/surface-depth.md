@@ -83,6 +83,55 @@ Semantic border strengths:
 
 Borders may communicate separation, geometry or state.
 
+## Material surfaces
+
+Sonata permits surfaces that combine translucency, blur, background interaction, elevation, shape, border and specular/highlight effects where appropriate — this extends the existing translucency and glass decisions (D-011) rather than restating them; the overlay-specific instance is decided in [`../system/overlays.md`](../system/overlays.md) (D-154).
+
+These effects are especially useful for:
+
+- sidebars
+- floating panels
+- menus
+- popovers
+- tool surfaces
+- sheets
+- contextual controls
+
+## Floating material surfaces
+
+A surface may visually float above Content Space while remaining part of the same semantic context.
+
+The background relationship should remain legible.
+
+## Material as optional treatment
+
+Material effects should be strongly supported by Sonata but remain contextual.
+
+They may be widely used when they improve visual hierarchy and spatial understanding.
+
+They must not impair:
+
+- text contrast
+- control recognition
+- selection
+- focus
+- data comprehension
+
+## Glass-like treatment
+
+Glass-like visual treatment is an official supported Sonata expression (D-011).
+
+It is not a mandatory appearance for every component.
+
+Its primary purposes are:
+
+- layering
+- contextual separation
+- visual continuity
+- floating relationship
+
+not decoration alone.
+
 ## Customization
 
 See [`../customization/shape-surface.md`](../customization/shape-surface.md) for the user/product-facing exposure surface. This file covers the surface hierarchy, treatments and elevation model that surface selects from.

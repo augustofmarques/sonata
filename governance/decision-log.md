@@ -464,3 +464,60 @@
 
 ## D-155 — Context preservation
 **Decision:** Closing an overlay should preserve the originating context and relevant state whenever practical.
+
+## D-156 — Containers as a first-class system
+**Decision:** Containers are a first-class Sonata system for semantic grouping and spatial organization.
+
+## D-157 — Card is not universal grouping
+**Decision:** Card is an official component but is not the default visual treatment for every group or section.
+
+## D-158 — Panel vs Card
+**Decision:** Panel represents a functional/spatial region, while Card primarily represents a self-contained content or interaction grouping.
+
+## D-159 — Section
+**Decision:** Section is an official semantic grouping concept that may appear in websites, application pages, panels, forms, settings and other contexts without requiring a visual surface.
+
+## D-160 — Group
+**Decision:** Group is an explicit semantic mechanism for keeping related elements together and preventing unnecessary fragmentation or redundancy.
+
+## D-161 — Stack and Grid
+**Decision:** Stack is the preferred one-dimensional composition mechanism for applicable simple arrangements; Grid is an official two-dimensional composition mechanism suitable for complex layouts including forms, dashboards and data interfaces.
+
+## D-162 — Surface-independent containers
+**Decision:** Containers may exist without background, border, elevation or radius.
+
+## D-163 — Separator restraint
+**Decision:** Separators are official but should not replace meaningful spacing and grouping as the primary way to communicate structure.
+
+## D-164 — Card nesting
+**Decision:** Cards may be nested when semantically justified, but unnecessary nested surfaces should be avoided.
+
+## D-165 — Inset / Well
+**Decision:** Inset or Well is an official lower-emphasis surface for contained secondary content.
+
+## D-166 — Full-bleed
+**Decision:** Containers may support full-bleed children for content such as media, tables, charts and code when preserving container association.
+
+## D-167 — Sticky regions
+**Decision:** Containers and compositions may use sticky regions where they improve access to persistent contextual controls without obscuring content.
+
+## D-168 — Indentation
+**Decision:** Indentation is an official Sonata structural pattern for communicating hierarchy, containment and subordination.
+
+## D-169 — Indentation is semantic-plus-visual
+**Decision:** Indentation must have corresponding semantic structure and cannot be the sole accessibility representation of hierarchy.
+
+## D-170 — Tablet composition
+**Decision:** Tablet and intermediate layouts may combine persistent content with collapsible, docked or floating supporting regions and may temporarily move supporting UI out of the way to maximize primary-content manipulation.
+
+## D-171 — Rounded floating surfaces
+**Decision:** Sonata explicitly supports rounded floating rectangles as a common surface form for panels, menus, sidebars, inspectors, popovers and contextual controls.
+
+## D-172 — Material 3 Expressive reference
+**Decision:** Material 3 Expressive is the primary external reference for Sonata's Expression layer, refining (not replacing) D-004; generic Material 3 remains a supporting reference for the underlying color/tonal systems.
+
+## D-173 — Apple as secondary reference
+**Decision:** Apple Human Interface Guidelines are an additional secondary reference for platform-aware composition, adaptive navigation, material surfaces, sidebars, toolbars, overlays and window composition. Apple does not override GNOME HIG authority.
+
+## D-174 — Content Space alignment
+**Decision:** Multiple containers and regions within one Content Space should share intentional alignment contexts so that the interface remains visually and semantically coherent.

@@ -6,9 +6,15 @@
 
 **Application Component** — a product-specific component that extends the Sonata base catalog rather than replacing it.
 
+**Card** — a self-contained content or interaction container with optional visual surface treatment; not the universal grouping mechanism.
+
 **Component** — reusable semantic UI building block consuming Sonata tokens.
 
 **Compound Component** — multiple coordinated primitives or Core Components composed into one semantic unit.
+
+**Container** — a semantic or spatial grouping mechanism that does not necessarily have a visible surface.
+
+**Content Space** — the primary coherent working context that may contain multiple coordinated regions.
 
 **Core Component** — an official, opinionated Sonata component providing a preferred solution to a common interaction problem.
 
@@ -24,11 +30,17 @@
 
 **Foundation** — Sonata layer responsible for structure, behavior, accessibility, writing and content; primarily grounded in GNOME HIG.
 
+**Group** — a semantic grouping of related elements that belong together conceptually.
+
 **Hero** — expressive composition mode used for focal, onboarding, empty-state or major-status experiences.
 
 **Icon Family** — a coherent, internally consistent set of icons sharing geometry, optical weight and rendering strategy; Sonata does not mandate a specific one.
 
 **Icon Weight** — the perceived stroke thickness or fill density of an icon, kept consistent within a family and appropriate to its scale.
+
+**Indentation** — a spatial cue communicating hierarchy, containment or subordination; must have corresponding semantic structure, not just visual offset.
+
+**Material Expression** — a visual treatment inspired by Material 3 Expressive involving color, shape, typography, motion or layered surfaces.
 
 **Mobile Class** — touch-first, focused-context adaptation of Sonata.
 
@@ -36,9 +48,19 @@
 
 **Optical Alignment** — visual, rather than strictly geometric, centering and sizing of an icon so it reads as balanced against adjacent text and controls.
 
+**Pane** — a Region with a relatively persistent spatial allocation.
+
+**Panel** — a functional region within a composition or application shell; may be persistent, contextual, collapsible, floating or transient.
+
 **Pattern** — reusable solution to a recurring application workflow; optional unless applicable.
 
+**Platform Reference** — external platform guidance (e.g. Apple HIG) that may inform implementation or expression without overriding Sonata's normative principles.
+
+**Region** — a functional subdivision of a Content Space.
+
 **Salience** — degree of visual prominence assigned to an element.
+
+**Section** — a meaningful division within a larger context; does not imply a particular surface treatment.
 
 **Selection** — the semantic state of which item(s) of an underlying data/object model are currently selected; distinct from focus, hover, active, checked and highlighted, and shareable across multiple views (e.g. Table, List, Inspector) of the same data.
 
@@ -47,6 +69,8 @@
 **Shape Profile** — named geometry personality: Geometric, Soft, Rounded, Expressive or Organic.
 
 **Sonata Theme** — coherent collection of token values defining a visual configuration.
+
+**Surface** — a visual material treatment independent of semantic container identity.
 
 **System** — construction layer grounded in Radix-style primitives, states, tokens and theming.
 

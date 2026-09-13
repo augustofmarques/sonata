@@ -58,3 +58,7 @@ Desktop should favor simultaneous visibility for repeatedly needed information o
 ## Overlays
 
 Desktop may retain more contextual information simultaneously through floating panels, drawers, inspectors, non-modal overlays and persistent tool regions when this materially improves workflow efficiency, rather than defaulting to modal interruption. See [Overlays](../system/overlays.md).
+
+## Containers
+
+Desktop may use more generous indentation where screen space permits — tree and hierarchy-heavy interfaces may use substantial indentation when it meaningfully improves scanning. See [Containers](../system/containers.md).

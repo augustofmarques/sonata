@@ -1,6 +1,6 @@
 # Material 3 Reference
 
-**Role in Sonata:** Expression reference.
+**Role in Sonata:** Supporting Expression reference for color/tonal systems specifically — [Material 3 Expressive](material-expressive.md) is now the primary Expression reference (D-172).
 
 Material 3 is used selectively. Sonata is interested primarily in the systems behind the visual language rather than adopting Material component conventions wholesale.
 

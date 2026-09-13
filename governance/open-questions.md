@@ -125,6 +125,18 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Mobile transformation rules.
 - Workspace serialization of layout.
 
+## Containers
+
+- Exact Container anatomy.
+- Exact Grid API.
+- Exact Stack API.
+- Minimum indentation unit.
+- Tree/list indentation behavior.
+- Full-bleed containment rules.
+- Sticky-region constraints.
+- Container alignment APIs.
+- Tablet-specific composition heuristics.
+
 ## Application Shell
 
 - Exact compact-header anatomy.
@@ -192,6 +204,10 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Public vs private tokens.
 - Product-specific token extension rules.
 - Custom-theme validation criteria.
+- Exact Apple-derived patterns Sonata will adopt.
+- Which Apple material behaviors belong in Sonata's Surface implementation.
+- Exact Material 3 Expressive principles to encode.
+- Whether Sonata defines a formal "Expressiveness" token affecting multiple visual dimensions simultaneously.
 
 ## Localization & Internationalization
 - RTL mirroring policy and intentional asymmetries.

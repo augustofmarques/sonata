@@ -48,3 +48,9 @@
 46. **Modal interruption should be reserved for situations that genuinely require focused attention.**
 47. **When users repeatedly need a temporary surface, the application may offer an easy way to make it persistent.**
 48. **Supplementary information may be progressively revealed through contextual assistance, but essential information must remain directly accessible.**
+49. **Related elements should be grouped intentionally so that users do not have to infer relationships from arbitrary placement.**
+50. **When information is hierarchically nested, Sonata should use consistent indentation or an equivalent spatial cue while preserving the same hierarchy semantically.**
+51. **A semantic grouping does not necessarily require a visible Card, Panel or surface.**
+52. **Rounded, floating, translucent and glass-like surfaces are legitimate Sonata expression mechanisms when they improve spatial understanding and do not impair work.**
+53. **Apple HIG may inform platform-aware composition, adaptive behavior and material expression but does not override GNOME HIG as the Foundation.**
+54. **Tablet and intermediate environments may combine touch-first interaction with flexible desktop-like spatial composition.**

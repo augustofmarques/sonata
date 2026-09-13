@@ -13,8 +13,13 @@ Sonata is a composed design language. References are grouped by role rather than
 
 ## Expression references
 
-- Material 3 / Material Expressive — reference for color systems, dynamic color, expressive hierarchy, motion, shape and hero composition.
+- **Material 3 Expressive** — the primary reference for Sonata's Expression layer: color, typography, shape, motion, animation, visual emphasis, expressive composition, hero moments and personalization (D-172). See `material-expressive.md`.
+- Material 3 — supporting reference for the underlying color/tonal systems (source color, dynamic color, tonal palettes) that Material 3 Expressive builds on. See `material.md`.
 - Material Color Utilities — reference implementation for HCT, tonal palettes and dynamic scheme generation.
+
+## Adaptive/system-adjacent reference
+
+- Apple Human Interface Guidelines — a secondary reference for platform-aware interaction, adaptive navigation, toolbars, sidebars, sheets, popovers and material/surface expression (D-173). Does not override GNOME HIG. See `apple-hig.md`.
 
 ## Typography reference
 
