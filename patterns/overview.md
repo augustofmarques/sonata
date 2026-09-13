@@ -16,6 +16,13 @@ Initial pattern families:
 - selection
 - feedback
 - notifications
+- OOBE / onboarding
 - power-user workflows
 
 Sidebar, Navigation Rail and Breadcrumbs are official System navigation *components* (see [`../system/navigation.md`](../system/navigation.md)), not Patterns — they follow the graduation ladder in `components.md` and are often structurally necessary rather than complexity-justified additions. Workspaces are a power-user pattern; see [Power User](power-user.md).
+
+## OOBE and Onboarding
+
+Sonata provides official OOBE and Onboarding patterns for introducing users to application capabilities, meaningful defaults and unfamiliar interaction models (D-198).
+
+See [`oobe.md`](oobe.md) and [`onboarding.md`](onboarding.md).

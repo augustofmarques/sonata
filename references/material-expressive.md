@@ -1,6 +1,6 @@
-# Material Expressive Reference
+# Reference — Material 3 Expressive
 
-**Role in Sonata:** Primary Expression reference (D-172), refining the general Expression-authority decision (D-004).
+**Role in Sonata:** Primary Expression reference (D-172), refining the general Expression-authority decision (D-004). See the [Reference Authority model](../governance/authority-matrix.md) (D-192) for how this classification works generally.
 
 Material 3 Expressive is the primary external reference for Sonata's Expression layer — the layer's other reference, generic Material 3 (`material.md`), remains a supporting reference specifically for the underlying color/tonal systems Material 3 Expressive builds on.
 

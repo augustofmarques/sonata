@@ -61,3 +61,8 @@
 59. **Optimistic interaction may improve responsiveness, but the UI must distinguish local application from confirmed persistence when the difference matters.**
 60. **Session and workspace restoration should not resurrect obsolete transient conditions.**
 61. **Power-user commands, undo/redo and feedback should be able to describe the same underlying semantic operation.**
+62. **Users may reshape the visual expression of the interface without breaking its semantic or spatial architecture.**
+63. **Applications should depend on semantic meaning rather than raw visual values.**
+64. **Every significant external design influence should have an explicit role and disposition within Sonata.**
+65. **When functionality can be learned through interaction, Sonata prefers demonstration over lengthy textual explanation.**
+66. **Initial configuration should focus on decisions that meaningfully improve the user's experience.**

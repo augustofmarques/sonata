@@ -2,7 +2,7 @@
 
 ## Status
 
-Decided: the three-axis structure below, and the combined resolution order. Open: several precedence and generation details, listed at the end of this file.
+Decided: the three-axis structure below, the combined resolution order, that Axis C state variants are independently themeable state tokens rather than fixed transforms (D-197), and the customization/structural-protection boundary (D-194). Open: several precedence and generation details, listed at the end of this file.
 
 ## Why this file exists
 
@@ -70,10 +70,49 @@ To resolve any value the system needs to render:
 
 `Rendered value = StateSelect_C( PrecedenceResolve_B( AbstractionClassify_A(request) ) )`
 
+## Customization resolution
+
+User customization operates primarily on semantic visual dimensions. The system derives component-level values from these preferences rather than requiring users to configure individual components independently.
+
+Example:
+
+```text
+User:
+Shape = Expressive
+
+        ↓
+
+Semantic:
+shape.control
+shape.container
+shape.overlay
+shape.hero
+
+        ↓
+
+Component:
+button.shape
+card.shape
+dialog.shape
+```
+
+## Structural protection
+
+Customization must not directly rewrite (D-194):
+
+- information architecture
+- semantic roles
+- navigation semantics
+- required interaction patterns
+- accessibility semantics
+
+Customization changes presentation within the bounds of Sonata.
+
 ## Open decisions
 
 - Exact conflict rule when an application theme marks a token non-overridable but user customization still targets it — does "capability is global, exposure is contextual" (Principle 9) mean the application can lock a token out of Axis B entirely, or only hide the control for it?
 - Which domains beyond color require a documented generation algorithm at the Axis B "spec defaults" step (shape, motion and spacing are current candidates — see their own Open Decisions sections).
-- Whether Axis C state variants are themselves independently themeable tokens (subject to their own Axis B precedence) or fixed transforms applied to the Axis B result.
 - How accessibility constraints on Axis B (reduced motion, high contrast) interact with Axis C state transitions — e.g. is a "pressed" motion variant removed under reduced motion, or replaced with a static equivalent?
-- Public vs private tokens, and product-specific token extension rules (affects what a product is allowed to insert at the "Application theme" step of Axis B).
+- Custom-theme validation criteria.
+
+Resolved: Axis C state variants are independently themeable state tokens (D-197, see [`tokens.md`](tokens.md)), not fixed transforms. Public-vs-private token status is answered by the Stable/Controlled/Internal API tiers in `tokens.md`; product-specific token extension rules are answered by D-195 (namespaced application tokens).

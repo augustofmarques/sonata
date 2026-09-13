@@ -41,3 +41,48 @@ This matrix defines which layer has decision authority.
 ## Conflict rule
 
 When two sources disagree, identify the type of decision first. Structural and semantic questions are resolved by Foundation; implementation questions by System; expression questions by Sonata Expression. Accessibility requirements can override any visual preference.
+
+## Reference authority model
+
+External sources may participate in Sonata at different authority levels (D-192).
+
+### Normative
+
+Sonata explicitly adopts the rule. The rule becomes part of Sonata's own specification.
+
+### Foundational
+
+The source provides a foundational conceptual or structural model that Sonata explicitly builds upon.
+
+### Reference
+
+The source provides design guidance or inspiration that Sonata may adapt.
+
+### Implementation Reference
+
+The source is consulted for implementation techniques without becoming a Sonata design rule.
+
+### Reference disposition
+
+Every important external influence should be classified as one of:
+
+- Adopted
+- Adapted
+- Reference-only
+- Rejected
+
+The disposition should explain the problem or design goal that motivated the decision.
+
+### Current reference roles
+
+**GNOME HIG** — Normative/Foundational for structure, layout, navigation, interaction, accessibility, writing and content.
+
+**Radix** — System and Implementation Reference for primitives, components, states, tokens, theming and accessible interaction infrastructure.
+
+**Material 3 Expressive** — Reference (primary Expression reference, D-172) for color, typography, shape, motion, animation, emphasis, hero composition and expressive interaction. See [`../references/material-expressive.md`](../references/material-expressive.md).
+
+**Apple Human Interface Guidelines** — Reference (secondary, D-173) for adaptive composition, platform-aware interaction, sidebars, toolbars, material surfaces, floating UI, window/application composition and visual polish. See [`../references/apple-hig.md`](../references/apple-hig.md).
+
+**Red Hat Typography** — Implementation Reference for the recommended UI/text family architecture, display typography, monospace and multilingual fallback.
+
+This section classifies reference *sources*; the table above classifies decision authority per *domain*. The two are complementary — a domain's authority may draw on a Normative, Foundational or Reference-level source depending on the question being asked.

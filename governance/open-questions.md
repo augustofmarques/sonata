@@ -205,6 +205,13 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Select-all scope communication.
 - Exact keyboard mappings per platform.
 
+## OOBE & Onboarding
+
+- Exact OOBE flow anatomy.
+- Replay/help re-entry UI.
+- Contextual-onboarding trigger rules.
+- Personalization step count/order within OOBE.
+
 ## Cross-cutting / Architecture
 - Exact boundary between Sonata conventions and native platform conventions.
 - Which platform conventions may override Sonata, and under what conditions.
@@ -212,10 +219,10 @@ These are unresolved design/implementation decisions. They are not missing docum
 - ~~Full token precedence model.~~ Resolved by D-024 / `system/resolution-model.md` (three-axis model: Abstraction, Precedence, State). Remaining sub-questions:
   - Exact conflict rule when an application theme marks a token non-overridable but user customization still targets it.
   - Which domains beyond color need a documented Axis-B generation algorithm (shape, motion, spacing are candidates).
-  - Whether Axis C state variants are independently themeable tokens or fixed transforms of the Axis B result.
   - How accessibility constraints (Axis B) interact with state transitions (Axis C) — e.g. is a "pressed" motion variant removed under reduced motion, or replaced with a static equivalent?
-- Public vs private tokens.
-- Product-specific token extension rules.
+- ~~Whether Axis C state variants are independently themeable tokens or fixed transforms of the Axis B result.~~ Resolved by D-197: they are independently themeable state tokens.
+- ~~Public vs private tokens.~~ Resolved by the Stable/Controlled/Internal API tiers in `system/tokens.md`.
+- ~~Product-specific token extension rules.~~ Resolved by D-195 (namespaced application tokens).
 - Custom-theme validation criteria.
 - Exact Apple-derived patterns Sonata will adopt.
 - Which Apple material behaviors belong in Sonata's Surface implementation.
@@ -246,7 +253,7 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Product palette extension rules.
 - Brand-to-semantic mapping.
 - New semantic color roles.
-- User vs application presets.
+- User vs application presets (D-196 decides Theme/Preference/Preset as distinct concepts and that applications may ship curated presets; whether users can save their own custom presets remains open).
 - Theme import/export.
 - Scope of preferences across apps/devices/accounts.
 

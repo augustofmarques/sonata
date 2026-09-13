@@ -10,6 +10,8 @@
 
 **Component** — reusable semantic UI building block consuming Sonata tokens.
 
+**Component Token** — a token mapping semantic values to the implementation of a specific component.
+
 **Compound Component** — multiple coordinated primitives or Core Components composed into one semantic unit.
 
 **Container** — a semantic or spatial grouping mechanism that does not necessarily have a visible surface.
@@ -27,6 +29,8 @@
 **Expressive Icon** — an icon whose primary purpose is character, personality or hero-level visual emphasis rather than compact semantic labeling.
 
 **Feedback** — communication of the result, state, progress, consequence or availability of an operation or system condition; presentation is proportional to the event's severity, urgency, persistence and context.
+
+**First Use** — the first meaningful interaction with a feature or application capability; may occur after initial launch, not only at OOBE.
 
 **Foundation** — Sonata layer responsible for structure, behavior, accessibility, writing and content; primarily grounded in GNOME HIG.
 
@@ -46,6 +50,10 @@
 
 **Notification** — communication of an event that may remain relevant beyond the moment it occurred, capable of persisting (optionally in a Notification Center) rather than only appearing transiently; distinct from a Toast and from an interruptive Alert.
 
+**Onboarding** — the broader system of orientation, discovery and education surrounding First Use; OOBE is its initial entry point.
+
+**OOBE** — Out-of-Box Experience; the initial experience used to orient, configure or demonstrate an application.
+
 **Optical Alignment** — visual, rather than strictly geometric, centering and sizing of an icon so it reads as balanced against adjacent text and controls.
 
 **Pane** — a Region with a relatively persistent spatial allocation.
@@ -55,6 +63,12 @@
 **Pattern** — reusable solution to a recurring application workflow; optional unless applicable.
 
 **Platform Reference** — external platform guidance (e.g. Apple HIG) that may inform implementation or expression without overriding Sonata's normative principles.
+
+**Preference** — a single user, application or system choice affecting presentation or behavior; a Theme is the coordinated result of one or more Preferences.
+
+**Preset** — a predefined Theme.
+
+**Primitive Token** — a low-level design value used internally to construct semantic or component tokens.
 
 **Region** — a functional subdivision of a Content Space.
 
@@ -66,9 +80,15 @@
 
 **Semantic Icon** — an icon whose meaning is functionally load-bearing (identifies an action, status or object), as distinct from a purely decorative icon.
 
+**Semantic State** — a meaningful condition of application, data or interaction state, independent of visual presentation (see [`../system/state.md`](../system/state.md)).
+
+**Semantic Token** — a stable token representing a design meaning rather than a raw visual value.
+
 **Shape Profile** — named geometry personality: Geometric, Soft, Rounded, Expressive or Organic.
 
-**Sonata Theme** — coherent collection of token values defining a visual configuration.
+**Sonata Theme** — coherent collection of token values defining a visual configuration; the result of one or more Preferences, and a Preset is a predefined one.
+
+**State Token** — a token representing the visual treatment of a semantic or interaction state (e.g. `button.hover`); independently themeable, not a fixed transform.
 
 **Surface** — a visual material treatment independent of semantic container identity.
 

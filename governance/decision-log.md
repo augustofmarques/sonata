@@ -572,3 +572,42 @@
 
 ## D-191 — Platform-independent state model
 **Decision:** Sonata's state and operation semantics are framework and platform agnostic.
+
+## D-192 — Reference authority model
+**Decision:** External influences are classified as Normative, Foundational, Reference or Implementation Reference, with explicit Adopted, Adapted, Reference-only or Rejected dispositions.
+
+## D-193 — Semantic token API
+**Decision:** Semantic tokens form the primary stable Sonata design API. Primitive values are implementation details and component tokens are controlled implementation-facing mappings.
+
+## D-194 — User customization boundary
+**Decision:** User customization primarily modifies coordinated semantic visual dimensions and must preserve semantic roles, information architecture, interaction behavior and accessibility.
+
+## D-195 — Application token extensibility
+**Decision:** Applications may define namespaced semantic tokens for domain-specific concepts without modifying the meaning of core Sonata tokens.
+
+## D-196 — Theme model
+**Decision:** Theme, Preference and Preset are distinct concepts. A Theme is a coordinated token mapping; a Preference is an individual choice; a Preset is a predefined Theme.
+
+## D-197 — State tokens are independently themeable
+**Decision:** Axis C state variants (D-024) are independently themeable state tokens — e.g. `button.hover`, `selection.selected` — rather than fixed transforms of the Axis B result. This resolves the corresponding open question in `system/resolution-model.md`.
+
+## D-198 — OOBE as official pattern
+**Decision:** OOBE/First Use is an official Sonata pattern for orientation, meaningful initial decisions, demonstrations and initial personalization.
+
+## D-199 — Interactive first use
+**Decision:** Where useful, First Use should demonstrate real functionality through interaction rather than relying only on descriptive text.
+
+## D-200 — First-use scope
+**Decision:** First Use should focus on meaningful defaults and important unfamiliar capabilities rather than attempting to expose the entire application.
+
+## D-201 — Contextual onboarding
+**Decision:** Onboarding may continue contextually after initial launch so advanced functionality can be introduced when relevant.
+
+## D-202 — Non-forced onboarding
+**Decision:** Experienced users should not be repeatedly forced through onboarding. Applications should provide appropriate skip, dismiss, replay or revisit mechanisms.
+
+## D-203 — OOBE personalization
+**Decision:** OOBE may establish high-value visual and workflow preferences such as theme, accent, typography, density and workspace configuration.
+
+## D-204 — Token implementation openness
+**Decision:** Component-token access is available to implementers when necessary, but component-token manipulation is distinct from ordinary user-facing customization.

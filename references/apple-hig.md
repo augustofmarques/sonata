@@ -1,6 +1,6 @@
 # Reference — Apple Human Interface Guidelines
 
-**Role in Sonata:** Secondary reference (D-173).
+**Role in Sonata:** Secondary reference (D-173). See the [Reference Authority model](../governance/authority-matrix.md) (D-192) for how this classification works generally. These references supplement rather than override GNOME HIG.
 
 ## Role in Sonata
 

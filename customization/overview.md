@@ -2,6 +2,8 @@
 
 Customization is a first-class Sonata capability.
 
+> Users may customize the expression of the interface without breaking its structure. (D-194, Principle 62)
+
 The system distinguishes:
 
 ```text
@@ -10,12 +12,13 @@ Capability
 Exposure
 ```
 
-Sonata may support a customization capability without requiring every application to expose it.
+Sonata defines capabilities globally; applications decide which capabilities to expose (Principle 9, D-017, D-023). Sonata may support a customization capability without requiring every application to expose it.
 
 ## High-priority candidates
 
-- theme
+- theme / theme mode
 - accent
+- neutral color
 - typography scale
 - interface scale
 - spacing/density
@@ -29,6 +32,46 @@ Sonata may support a customization capability without requiring every applicatio
 - contrast
 - font family
 - line spacing
+- workspace composition
+- navigation visibility
+- tool visibility
+
+## Customization packages
+
+Related values should preferably be changed together rather than independently, so a single user choice produces a coherent result.
+
+Examples:
+
+```text
+Density
+→ spacing + control dimensions + row heights + related typography
+
+Interface scale
+→ typography + controls + icons + spacing
+
+Shape
+→ control + container + surface + overlay geometry
+
+Accent
+→ accent palette + interactive emphasis + selected states
+```
+
+## Structural invariants
+
+Customization must not break (D-194):
+
+- hierarchy
+- semantic meaning
+- navigation
+- accessibility
+- minimum usable targets
+- required interaction behavior
+
+## Advanced implementation customization
+
+Implementers may access component tokens where necessary (D-204, [`../system/tokens.md`](../system/tokens.md)).
+
+This is distinct from ordinary user-facing customization.
 
 ## Per-domain detail
 
