@@ -632,3 +632,60 @@
 
 ## D-211 — Shape/surface independence
 **Decision:** Shape and surface/material are independent dimensions and may be combined freely within accessibility and semantic constraints.
+
+## D-212 — Typography presets
+**Decision:** Applications may expose curated typography presets and additional supported font families through Settings, provided they satisfy the Sonata typography contract.
+
+## D-213 — Semantic type roles
+**Decision:** Sonata defines Display, Hero, Heading, Title, Body, Label, Caption, Code and Numeric semantic typography roles.
+
+## D-214 — Concrete typography baseline
+**Decision:** Sonata adopts the documented v1 candidate typography scale for Body, Heading, Display, Label, Caption and Code. Values remain subject to component validation before final freezing.
+
+## D-215 — Body baseline
+**Decision:** Sonata's default Body baseline is 16/24.
+
+## D-216 — Minimum ordinary text
+**Decision:** 12px is the minimum recommended ordinary text size. Smaller type requires strong contextual justification and should not be used simply to recover layout space.
+
+## D-217 — Separate semantic scales
+**Decision:** Sonata uses distinct Body/UI, Heading, Display and Code scale families rather than one universal size ladder.
+
+## D-218 — Numeric typography
+**Decision:** Numeric typography is a distinct semantic concern with proportional, tabular and monospace modes and locale-aware numeral support.
+
+## D-219 — Typography weight vocabulary
+**Decision:** Regular, Medium and Bold form Sonata's baseline semantic weight vocabulary, with additional weights permitted when the selected typeface and context justify them.
+
+## D-220 — Independent typography scaling
+**Decision:** Text Scale and Interface Scale remain independent user preferences. Density does not globally change typography size, and enlarging text scale must trigger layout reflow rather than shrinking type to fit.
+
+## D-221 — Typography expression
+**Decision:** Sonata defines Standard, Expressive and Hero typography expression levels.
+
+## D-222 — Typography animation
+**Decision:** Typography may participate in Motion where animation communicates semantic change or reinforces appropriately expressive contexts.
+
+## D-223 — Optical alignment
+**Decision:** Optical alignment is a first-class Sonata principle, generalized from icons to typography and UI generally. Perceived alignment takes precedence over mathematical bounding-box alignment when the two conflict.
+
+## D-224 — Locale-aware typography
+**Decision:** Typography may vary by locale/script in family, metrics, line-height, tracking and optical behavior to preserve equivalent legibility, extending the general localization decision (D-019) with concrete dimensions.
+
+## D-225 — Variable fonts
+**Decision:** Variable fonts are preferred when available but are not mandatory.
+
+## D-226 — Optical sizing
+**Decision:** Optical sizing should be used when supported by the selected typeface and platform.
+
+## D-227 — Rendering independence
+**Decision:** Font rasterization and anti-aliasing remain platform implementation concerns. Sonata's visual baseline favors high-quality contemporary text rendering rather than a mandatory rasterizer.
+
+## D-228 — Hyphenation
+**Decision:** Hyphenation is an acceptable reflow mechanism when appropriate to the language and content.
+
+## D-229 — Typography contract
+**Decision:** Compatible typography systems must map UI, Display, Mono, Numeric and locale fallback roles, even if they use a different underlying font architecture.
+
+## D-230 — Kbd typography
+**Decision:** Keyboard-shortcut and `kbd` presentation uses Sonata UI typography by default rather than automatically switching to monospace; monospace is used only when a technical representation's visual semantics justify it.

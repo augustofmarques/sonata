@@ -58,7 +58,7 @@ motion.interaction
 elevation.floating
 ```
 
-Semantic tokens are the primary stable Sonata design API (D-193). Spacing (`space.*`) and shape (`shape.*`) now have a concrete v1 candidate scale and semantic alias set — see [`../expression/spacing-density.md`](../expression/spacing-density.md) (D-205) and [`../expression/shape.md`](../expression/shape.md) (D-210).
+Semantic tokens are the primary stable Sonata design API (D-193). Spacing (`space.*`), shape (`shape.*`) and typography (`type.*`) now have a concrete v1 candidate scale and semantic alias set — see [`../expression/spacing-density.md`](../expression/spacing-density.md) (D-205), [`../expression/shape.md`](../expression/shape.md) (D-210) and [`../expression/typography.md`](../expression/typography.md) (D-214).
 
 ## Component tokens
 

@@ -54,7 +54,7 @@
 
 **OOBE** — Out-of-Box Experience; the initial experience used to orient, configure or demonstrate an application.
 
-**Optical Alignment** — visual, rather than strictly geometric, centering and sizing of an icon so it reads as balanced against adjacent text and controls.
+**Optical Alignment** — visual, rather than strictly geometric, centering and sizing so an element (icon, type, container) reads as balanced against adjacent content; perceived alignment takes precedence over mathematical bounding-box alignment when the two conflict (D-223). Originally defined for icons; generalized to typography and UI generally.
 
 **Pane** — a Region with a relatively persistent spatial allocation.
 

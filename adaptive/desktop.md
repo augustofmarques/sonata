@@ -66,3 +66,7 @@ Desktop may use more generous indentation where screen space permits — tree an
 ## State
 
 Desktop applications with persistent background work (sync, export, long-running jobs) should keep operations non-blocking and expose their state through persistent status rather than forcing the user to wait. See [State](../system/state.md) and [Operations](../system/operations.md).
+
+## Typography
+
+Desktop may use larger display sizes and richer data typography than Mobile while sharing the same semantic type roles and scale. See [Typography](../expression/typography.md).

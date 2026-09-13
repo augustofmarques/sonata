@@ -17,3 +17,7 @@ Sonata adopts this architecture as its recommended default, not as a mandatory t
 Typeface choice is replaceable; the semantic type architecture is not.
 
 Sonata must maintain explicit roles for UI/text, display, mono/code and numeric data even when several roles share one family.
+
+## Concrete scale
+
+Sonata's v1 candidate Body scale (16/24 default) and Heading scale intentionally sit close to Red Hat's current scale and rhythm, with a larger Display range closer to expressive ranges seen in Red Hat and Material 3. See [`../expression/typography.md`](../expression/typography.md) (D-214) for the full scale.

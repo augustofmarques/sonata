@@ -6,7 +6,7 @@ These are unresolved design/implementation decisions. They are not missing docum
 
 - Exact hybrid color generation algorithm.
 - Curated Sonata palette and neutral defaults.
-- Exact typography scale and variable-font strategy.
+- ~~Exact typography scale and variable-font strategy.~~ Resolved by D-214 (v1 candidate scale) and D-225 (preferred, not mandatory). Exact letter-spacing and weight-per-family mapping remain open.
 - ~~Exact spacing scale~~ Resolved by D-205 (v1 candidate baseline). Density transform tables per profile remain open.
 - Exact shape/radius values per personality; organic geometry formal definition remains open.
 - Surface/translucency tiers and blur rules.
@@ -23,11 +23,14 @@ These are unresolved design/implementation decisions. They are not missing docum
 - Dynamic/image-derived color.
 
 ## Typography
-- Final default typeface recommendation within the Red Hat + Noto architecture.
-- Exact type scale.
-- Variable-font strategy.
-- Numeric typography defaults.
-- Detailed locale/script fallback table.
+- Exact letter-spacing values.
+- Exact weight mapping per default font family.
+- Exact Display/Heading transition rules.
+- Exact font preset catalog.
+- Exact locale/script fallback matrix.
+- Exact hyphenation policy per platform.
+- Exact optical-alignment heuristics.
+- Exact Interface Scale multipliers.
 
 ## Shape
 - Exact radius values per shape token and personality.

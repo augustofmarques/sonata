@@ -210,7 +210,7 @@ The implementation must translate Sonata, not redefine it.
 - Desktop Class and Mobile Class are distinct interaction compositions; Adaptive Class bridges them.
 - User customization is first-class and token-driven.
 - Accent color is highly customizable; curated palette + advanced arbitrary accent color; neutral palette may also be customized. Semantic success/warning/danger/info roles are protected.
-- Typography is a system-level architecture, not locked to one font family. Recommended default: Red Hat Display / Text / Mono, with multilingual fallback strategy, while remaining replaceable. Mono is an explicit semantic role distinct from numeric typography.
+- Typography is a system-level architecture, not locked to one font family. Recommended default: Red Hat Display / Text / Mono, with multilingual fallback strategy, while remaining replaceable. Mono is an explicit semantic role distinct from numeric typography. Typography now has a v1 candidate concrete scale (Body 16/24 default, plus Heading/Display/Label/Caption/Code ladders, D-214–D-215) with separate scale families rather than one universal ladder (D-217), a Regular/Medium/Bold weight vocabulary (D-219), and Text Scale kept independent from Interface Scale and Density — enlarging text must reflow layout, never shrink to fit (D-220). Optical alignment (perceived alignment over mathematical bounding-box alignment) is now a first-class Sonata principle covering typography and UI generally, not just icons (D-223). See [Typography](expression/typography.md).
 - Shape is customizable and may range from subtle to expressive/organic, via five named personalities (Subtle/Soft/Rounded/Expressive/Organic — D-209) that map a decided semantic-role set to geometry rather than fixing one radius (D-210); shape and surface/material remain independent dimensions (D-211). See [Shape](expression/shape.md).
 - Translucent surfaces are supported but glassmorphism is not mandatory.
 - Density is a first-class user preference, not merely smaller padding — Comfortable/Balanced/Compact/Dense are the four official profiles with Balanced as default (D-206–D-207), available per adaptive class (Mobile stops at Compact; Dense is unconditional only on Desktop — D-208), and independent from Interface/Typography Scale. Spacing itself now has a v1 candidate numeric baseline (0/2/4/6/8/12/16/20/24/32/40/48/64/80/96 — D-205) exposed through semantic aliases. See [Spacing & Density](expression/spacing-density.md).
@@ -259,7 +259,7 @@ See [Decision Log](governance/decision-log.md) for the full, numbered (D-001…)
 ## Deliberately open
 
 - Exact color generation algorithm; curated Sonata palette and neutral defaults.
-- Exact typography scale and variable-font strategy; final default typeface within the Red Hat + Noto architecture.
+- Exact letter-spacing values, weight-per-family mapping, and locale/script fallback matrix (concrete scale, weight vocabulary and family architecture are decided — D-008, D-214, D-219).
 - Exact shape/radius values per personality and formal organic-geometry definition (scale token names and the five personalities are decided — D-209–D-210); exact per-profile density transform tables (spacing scale and profile names are decided — D-205–D-208).
 - Surface/translucency tiers and blur/backdrop rules.
 - Motion durations, easing and spring strategy.

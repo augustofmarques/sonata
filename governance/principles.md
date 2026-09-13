@@ -66,3 +66,5 @@
 64. **Every significant external design influence should have an explicit role and disposition within Sonata.**
 65. **When functionality can be learned through interaction, Sonata prefers demonstration over lengthy textual explanation.**
 66. **Initial configuration should focus on decisions that meaningfully improve the user's experience.**
+67. **Perceived alignment takes precedence over mathematical bounding-box alignment when the two conflict.**
+68. **Enlarging text should adapt the layout around it rather than being shrunk to fit.**

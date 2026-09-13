@@ -69,6 +69,10 @@ Mobile may reduce indentation magnitude when screen width is constrained, but mu
 
 Offline, degraded-connectivity and syncing conditions are especially common on Mobile; the UI should communicate the current condition without repeatedly notifying about an unchanged state, and should let the user continue unrelated work when safely possible. See [State](../system/state.md).
 
+## Typography
+
+Mobile generally uses a tighter display hierarchy than Desktop while sharing the same semantic type roles and scale. When the user selects a larger text scale, reflow the layout rather than shrinking type to fit. See [Typography](../expression/typography.md).
+
 ## Customization
 
 Prefer a smaller set of high-value controls such as theme, accent, text scale, interface scale, motion and contrast.
